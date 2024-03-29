@@ -1,1 +1,2 @@
 1. Create a class for bees and a class for butterflies
+    - Each class needs an init function that defines its position and
