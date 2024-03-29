@@ -1,2 +1,17 @@
 1. Create a class for bees and a class for butterflies
-    - Each class needs an init function that defines its position and
+    - Each class needs an init function that defines its screen and position
+    - each class needs a "make" function that will draw the bees/butterflies to the screen. This includes
+    - from here, we need to start with a random
+
+
+mouse_pos = None
+ trying to access mouse position while it doesn't exist  so put this^^
+code to be used
+# if mouse position != none
+
+# And then realize that you don't actually have to do a design for the critter function...
+1. (for real this time) Main function()
+    - copy and paste the starter code in for task1
+    - print a welcome message, then give some instructions just because.
+1a. Get input:
+    - use the pygame mouse
