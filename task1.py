@@ -25,12 +25,12 @@ def main():
     kill_mouse = pygame.image.load("Arrow_Loaded_Crossbow.png")
 
     # music and sounds
-    bg_music = pygame.mixer.Sound("Minecraft.mp3")   # assigned to list 0
-    reel_sound = pygame.mixer.Sound("catch.mp3")   # assigned to list in position 1
-    shoot_sound = pygame.mixer.Sound("bow_shoot.mp3")   # assigned to played list in position 2
-    tool_good_sound = pygame.mixer.Sound("Small_xp.mp3")   # assigned to played list in position 3
-    level_complete_sound = pygame.mixer.Sound("Large_xp.mp3")   # position 4
-    bad_sound = pygame.mixer.Sound("Minecraft_oof.mp3")   # position 5
+    bg_music = pygame.mixer.Sound("Minecraft.mp3")
+    reel_sound = pygame.mixer.Sound("catch.mp3")    # position 0
+    shoot_sound = pygame.mixer.Sound("bow_shoot.mp3")   # assigned to played list in position 1
+    tool_good_sound = pygame.mixer.Sound("Small_xp.mp3")    # position 2
+    level_complete_sound = pygame.mixer.Sound("Large_xp.mp3")
+    bad_sound = pygame.mixer.Sound("Minecraft_oof.mp3")
 
     # set up the game data #
     critters_list = make_critters_list(count, screen, ["wonk_parrot.png", "Angry_Bee.png"])
@@ -44,12 +44,12 @@ def main():
     win = False
     mouse_type = 1
     bg_music.play(-1)
+    final_sound_played = False
     init_start_time = time.time()
     while running:
-        clicked = False
         # collect User Input/Events
         # this is so that the sounds only play once hopefully
-        sounds = [False, False, False, False, False, False]
+        sounds = [False, False, False]
         mouse_pos = pygame.mouse.get_pos()
         clicked = pygame.mouse.get_pressed(3)[0]
         # if the user exits the program, break out of the loop
@@ -113,7 +113,9 @@ def main():
                 final_message = pygame.font.SysFont("timesnewroman", 70).render(
                     f"You {sad_message[0]} a {sad_message[1]} :(", True, "red")
             else:
-                pygame.mixer.Sound.play(level_complete_sound, 1, 2)
+                if not final_sound_played:
+                    pygame.mixer.Sound.play(level_complete_sound)
+                    final_sound_played = True
                 final_message = pygame.font.SysFont("timesnewroman", 70).render(f"You caught the birds and killed the bees!", True, "green")
 
             # Set a game reset
@@ -125,6 +127,7 @@ def main():
                     count = 10
                 critters_list = make_critters_list(count, screen, ["wonk_parrot.png", "Angry_Bee.png"])
                 bg_music.play()
+                final_sound_played = False
 
             # print the final message to the screen
             screen.blit(final_message, [SCREEN_WIDTH // 2 - final_message.get_width() // 2, SCREEN_HEIGHT // 2 - final_message.get_height() // 2])
