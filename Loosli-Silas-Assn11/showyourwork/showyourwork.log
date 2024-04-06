@@ -298,3 +298,554 @@ def thinking(msg):
     print()
 
 main()","","0","1712433810597","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Action","Outside edit","","","1712434532643","task1.py","1.1.5 for 2021-2022 @t1",,"Outside Edit",,,,,
+"File.Edit","","from utility import NAMES, HOMETOWNS, AGE_RANGE
+from person import Person
+from random import randint
+from time import sleep
+
+
+def main():
+    print(""Welcome to the Peopleinator"")
+    input(""\tHit Enter to Begin"")
+    print()
+    thinking(""Creating People List"")
+    print()
+
+    ##### Create and Display the People List #####
+    people_list = create_people_list()
+
+    print(""People List"")
+    for i in people_list:
+        print(i)
+    print()
+
+    ##### Create and Display the Hometown List #####
+    input(""Hit Enter to group by Hometown"")
+    thinking(""\tProcessing"")
+    print()
+    hometown_list = create_hometown_list(people_list)
+
+    print(""Hometown List"")
+    for i in hometown_list:
+        print(i)
+    print()
+
+    ##### Create and Display the Age List #####
+    input(""Hit Enter to group by Age"")
+    thinking(""\tProcessing"")
+    print()
+    age_list = create_age_list(people_list)
+
+    print(""Age List"")
+    for i in age_list:
+        print(i)
+    print()
+
+    ##### Display a Person object by entering an id. Use the original people_list #####
+    print(""Find a person by their id"")
+    while True:
+        person_id = input(""Enter an id from 0 to "" + str(len(HOMETOWNS) * len(NAMES) - 1) + "" (Enter without number to end): "")
+        if person_id == """": # Stop when the user just hits enter
+            break
+
+        print(get_person_by_id(people_list, int(person_id)))
+    print()
+
+    ##### Thank You Message #####
+    print(""Thanks for using Peopleinator"")
+
+def create_people_list():
+    return []
+
+def create_hometown_list(people_list):
+    return []
+
+def create_age_list(people_list):
+
+
+    return []
+
+def get_person_by_id(people_list, person_id):
+    return people_list[""?""][""?""]
+
+def thinking(msg):
+    print(msg, end="""")
+    for i in range(5):
+        print(""."", end="""")
+        sleep(0.5)
+    print()
+
+main()from utility import NAMES, HOMETOWNS, AGE_RANGE
+from person import Person
+from random import randint
+from time import sleep
+
+
+def main():
+    print(""Welcome to the Peopleinator"")
+    input(""\tHit Enter to Begin"")
+    print()
+    thinking(""Creating People List"")
+    print()
+
+    ##### Create and Display the People List #####
+    people_list = create_people_list()
+
+    print(""People List"")
+    for i in people_list:
+        print(i)
+    print()
+
+    ##### Create and Display the Hometown List #####
+    input(""Hit Enter to group by Hometown"")
+    thinking(""\tProcessing"")
+    print()
+    hometown_list = create_hometown_list(people_list)
+
+    print(""Hometown List"")
+    for i in hometown_list:
+        print(i)
+    print()
+
+    ##### Create and Display the Age List #####
+    input(""Hit Enter to group by Age"")
+    thinking(""\tProcessing"")
+    print()
+    age_list = create_age_list(people_list)
+
+    print(""Age List"")
+    for i in age_list:
+        print(i)
+    print()
+
+    ##### Display a Person object by entering an id. Use the original people_list #####
+    print(""Find a person by their id"")
+    while True:
+        person_id = input(""Enter an id from 0 to "" + str(len(HOMETOWNS) * len(NAMES) - 1) + "" (Enter without number to end): "")
+        if person_id == """": # Stop when the user just hits enter
+            break
+
+        print(get_person_by_id(people_list, int(person_id)))
+    print()
+
+    ##### Thank You Message #####
+    print(""Thanks for using Peopleinator"")
+
+def create_people_list():
+    return []
+
+def create_hometown_list(people_list):
+    return []
+
+def create_age_list(people_list):
+
+
+    return []
+
+def get_person_by_id(people_list, person_id):
+    return people_list[""?""][""?""]
+
+def thinking(msg):
+    print(msg, end="""")
+    for i in range(5):
+        print(""."", end="""")
+        sleep(0.5)
+    print()
+
+main()","0","1712434532643","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"File.Edit","from utility import NAMES, HOMETOWNS, AGE_RANGE
+from person import Person
+from random import randint
+from time import sleep
+
+
+def main():
+    print(""Welcome to the Peopleinator"")
+    input(""\tHit Enter to Begin"")
+    print()
+    thinking(""Creating People List"")
+    print()
+
+    ##### Create and Display the People List #####
+    people_list = create_people_list()
+
+    print(""People List"")
+    for i in people_list:
+        print(i)
+    print()
+
+    ##### Create and Display the Hometown List #####
+    input(""Hit Enter to group by Hometown"")
+    thinking(""\tProcessing"")
+    print()
+    hometown_list = create_hometown_list(people_list)
+
+    print(""Hometown List"")
+    for i in hometown_list:
+        print(i)
+    print()
+
+    ##### Create and Display the Age List #####
+    input(""Hit Enter to group by Age"")
+    thinking(""\tProcessing"")
+    print()
+    age_list = create_age_list(people_list)
+
+    print(""Age List"")
+    for i in age_list:
+        print(i)
+    print()
+
+    ##### Display a Person object by entering an id. Use the original people_list #####
+    print(""Find a person by their id"")
+    while True:
+        person_id = input(""Enter an id from 0 to "" + str(len(HOMETOWNS) * len(NAMES) - 1) + "" (Enter without number to end): "")
+        if person_id == """": # Stop when the user just hits enter
+            break
+
+        print(get_person_by_id(people_list, int(person_id)))
+    print()
+
+    ##### Thank You Message #####
+    print(""Thanks for using Peopleinator"")
+
+def create_people_list():
+    return []
+
+def create_hometown_list(people_list):
+    return []
+
+def create_age_list(people_list):
+
+
+    return []
+
+def get_person_by_id(people_list, person_id):
+    return people_list[""?""][""?""]
+
+def thinking(msg):
+    print(msg, end="""")
+    for i in range(5):
+        print(""."", end="""")
+        sleep(0.5)
+    print()
+
+main()","","0","1712434532644","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Action","ShowYourWork Init","","","1712434532662",,"1.1.5 for 2021-2022 @t1",,"Init",,,,,
+"File.Edit","#","","124","1712434723513","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","#",,"125","1712434723572","task1.py","1.1.5 for 2021-2022 @t1",,"#",,,,,
+"File.Edit"," ","","125","1712434723634","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"126","1712434723638","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","T","","126","1712434723929","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","T",,"127","1712434723930","task1.py","1.1.5 for 2021-2022 @t1",,"T",,,,,
+"File.Edit","h","","127","1712434724093","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","h",,"128","1712434724097","task1.py","1.1.5 for 2021-2022 @t1",,"h",,,,,
+"File.Edit","i","","128","1712434724118","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","i",,"129","1712434724121","task1.py","1.1.5 for 2021-2022 @t1",,"i",,,,,
+"File.Edit","s","","129","1712434724190","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"130","1712434724195","task1.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit"," ","","130","1712434724344","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"131","1712434724347","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","s","","131","1712434724468","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"132","1712434724469","task1.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit","h","","132","1712434724532","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","h",,"133","1712434724535","task1.py","1.1.5 for 2021-2022 @t1",,"h",,,,,
+"File.Edit","o","","133","1712434724603","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","o",,"134","1712434724605","task1.py","1.1.5 for 2021-2022 @t1",,"o",,,,,
+"File.Edit","u","","134","1712434724697","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","u",,"135","1712434724699","task1.py","1.1.5 for 2021-2022 @t1",,"u",,,,,
+"File.Edit","l","","135","1712434724857","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","l",,"136","1712434724859","task1.py","1.1.5 for 2021-2022 @t1",,"l",,,,,
+"File.Edit","d","","136","1712434724920","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","d",,"137","1712434724922","task1.py","1.1.5 for 2021-2022 @t1",,"d",,,,,
+"File.Edit"," ","","137","1712434724998","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"138","1712434725000","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","w","","138","1712434725140","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","w",,"139","1712434725143","task1.py","1.1.5 for 2021-2022 @t1",,"w",,,,,
+"File.Edit","o","","139","1712434725240","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","o",,"140","1712434725242","task1.py","1.1.5 for 2021-2022 @t1",,"o",,,,,
+"File.Edit","r","","140","1712434725299","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","r",,"141","1712434725301","task1.py","1.1.5 for 2021-2022 @t1",,"r",,,,,
+"File.Edit","k","","141","1712434725432","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","k",,"142","1712434725434","task1.py","1.1.5 for 2021-2022 @t1",,"k",,,,,
+"File.Edit"," ","","142","1712434725548","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"143","1712434725550","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","n","","143","1712434725704","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","n",,"144","1712434725706","task1.py","1.1.5 for 2021-2022 @t1",,"n",,,,,
+"File.Edit","o","","144","1712434725765","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","o",,"145","1712434725768","task1.py","1.1.5 for 2021-2022 @t1",,"o",,,,,
+"File.Edit","w","","145","1712434726127","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","w",,"146","1712434726129","task1.py","1.1.5 for 2021-2022 @t1",,"w",,,,,
+"X-Action","Outside edit","","","1712434892650","task1.py","1.1.5 for 2021-2022 @t1",,"Outside Edit",,,,,
+"File.Edit","","from utility import NAMES, HOMETOWNS, AGE_RANGE
+from person import Person
+from random import randint
+from time import sleep
+# This should work now
+
+def main():
+    print(""Welcome to the Peopleinator"")
+    input(""\tHit Enter to Begin"")
+    print()
+    thinking(""Creating People List"")
+    print()
+
+    ##### Create and Display the People List #####
+    people_list = create_people_list()
+
+    print(""People List"")
+    for i in people_list:
+        print(i)
+    print()
+
+    ##### Create and Display the Hometown List #####
+    input(""Hit Enter to group by Hometown"")
+    thinking(""\tProcessing"")
+    print()
+    hometown_list = create_hometown_list(people_list)
+
+    print(""Hometown List"")
+    for i in hometown_list:
+        print(i)
+    print()
+
+    ##### Create and Display the Age List #####
+    input(""Hit Enter to group by Age"")
+    thinking(""\tProcessing"")
+    print()
+    age_list = create_age_list(people_list)
+
+    print(""Age List"")
+    for i in age_list:
+        print(i)
+    print()
+
+    ##### Display a Person object by entering an id. Use the original people_list #####
+    print(""Find a person by their id"")
+    while True:
+        person_id = input(""Enter an id from 0 to "" + str(len(HOMETOWNS) * len(NAMES) - 1) + "" (Enter without number to end): "")
+        if person_id == """": # Stop when the user just hits enter
+            break
+
+        print(get_person_by_id(people_list, int(person_id)))
+    print()
+
+    ##### Thank You Message #####
+    print(""Thanks for using Peopleinator"")
+
+def create_people_list():
+    return []
+
+def create_hometown_list(people_list):
+    return []
+
+def create_age_list(people_list):
+
+
+    return []
+
+def get_person_by_id(people_list, person_id):
+    return people_list[""?""][""?""]
+
+def thinking(msg):
+    print(msg, end="""")
+    for i in range(5):
+        print(""."", end="""")
+        sleep(0.5)
+    print()
+
+main()","0","1712434892650","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"File.Edit","from utility import NAMES, HOMETOWNS, AGE_RANGE
+from person import Person
+from random import randint
+from time import sleep
+
+
+def main():
+    print(""Welcome to the Peopleinator"")
+    input(""\tHit Enter to Begin"")
+    print()
+    thinking(""Creating People List"")
+    print()
+
+    ##### Create and Display the People List #####
+    people_list = create_people_list()
+
+    print(""People List"")
+    for i in people_list:
+        print(i)
+    print()
+
+    ##### Create and Display the Hometown List #####
+    input(""Hit Enter to group by Hometown"")
+    thinking(""\tProcessing"")
+    print()
+    hometown_list = create_hometown_list(people_list)
+
+    print(""Hometown List"")
+    for i in hometown_list:
+        print(i)
+    print()
+
+    ##### Create and Display the Age List #####
+    input(""Hit Enter to group by Age"")
+    thinking(""\tProcessing"")
+    print()
+    age_list = create_age_list(people_list)
+
+    print(""Age List"")
+    for i in age_list:
+        print(i)
+    print()
+
+    ##### Display a Person object by entering an id. Use the original people_list #####
+    print(""Find a person by their id"")
+    while True:
+        person_id = input(""Enter an id from 0 to "" + str(len(HOMETOWNS) * len(NAMES) - 1) + "" (Enter without number to end): "")
+        if person_id == """": # Stop when the user just hits enter
+            break
+
+        print(get_person_by_id(people_list, int(person_id)))
+    print()
+
+    ##### Thank You Message #####
+    print(""Thanks for using Peopleinator"")
+
+def create_people_list():
+    return []
+
+def create_hometown_list(people_list):
+    return []
+
+def create_age_list(people_list):
+
+
+    return []
+
+def get_person_by_id(people_list, person_id):
+    return people_list[""?""][""?""]
+
+def thinking(msg):
+    print(msg, end="""")
+    for i in range(5):
+        print(""."", end="""")
+        sleep(0.5)
+    print()
+
+main()","","0","1712434892650","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Action","ShowYourWork Init","","","1712434892680",,"1.1.5 for 2021-2022 @t1",,"Init",,,,,
+"X-Action","Outside edit","","","1712434925076","person.py","1.1.5 for 2021-2022 @t1",,"Outside Edit",,,,,
+"File.Edit","","","0","1712434925076","person.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"File.Edit","from utility import NAMES, HOMETOWNS
+
+class Person:
+    def __init__(self, id, age):
+        pass
+
+
+    def get_name(self):
+        return ""Name""
+
+    def get_hometown(self):
+        return ""Hometown""
+
+    def get_age(self):
+        return ""Age""
+
+    def get_id(self):
+        return ""Id""
+
+    # Defines what gets printed out if the object is in a list
+    def __repr__(self):
+        return self.get_name() + "" "" + self.get_hometown() + "" "" + str(self.get_age())
+
+    # Defines what gets printed out if you print out an object
+    def __str__(self):
+        return self.get_name() + "" is from "" + self.get_hometown() + "" and is "" + str(self.get_age()) + "" years old.""
+","","0","1712434925076","person.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Action","ShowYourWork Init","","","1712434925103",,"1.1.5 for 2021-2022 @t1",,"Init",,,,,
+"X-Action","Enter",,,"1712434931846","demo.py","1.1.5 for 2021-2022 @t1",,"Enter",,,,,
+"File.Edit","from utility import NAMES, HOMETOWNS, AGE_RANGE
+from time import sleep
+
+
+def main():
+    print(NAMES)
+    thinking(""Just a second"")
+    print(HOMETOWNS)
+    thinking(""Sorry, hold on"")
+    print(AGE_RANGE)
+    thinking(""All done"")
+
+
+def thinking(msg):
+    print(msg, end="""")
+    for i in range(5):
+        print(""."", end="""")
+        sleep(0.5)
+    print()
+
+main()","","0","1712434931910","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Action","Up",,,"1712434932548","demo.py","1.1.5 for 2021-2022 @t1",,"Up",,,,,
+"File.Edit","#","","71","1712434933039","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","#",,"72","1712434933050","demo.py","1.1.5 for 2021-2022 @t1",,"#",,,,,
+"File.Edit"," ","","72","1712434934487","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"73","1712434934493","demo.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","C","","73","1712434936441","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","C",,"74","1712434936451","demo.py","1.1.5 for 2021-2022 @t1",,"C",,,,,
+"File.Edit","h","","74","1712434936616","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","h",,"75","1712434936622","demo.py","1.1.5 for 2021-2022 @t1",,"h",,,,,
+"File.Edit","a","","75","1712434936784","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","a",,"76","1712434936787","demo.py","1.1.5 for 2021-2022 @t1",,"a",,,,,
+"File.Edit","n","","76","1712434936976","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","n",,"77","1712434936984","demo.py","1.1.5 for 2021-2022 @t1",,"n",,,,,
+"File.Edit","g","","77","1712434937041","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","g",,"78","1712434937048","demo.py","1.1.5 for 2021-2022 @t1",,"g",,,,,
+"File.Edit","e","","78","1712434937198","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","e",,"79","1712434937201","demo.py","1.1.5 for 2021-2022 @t1",,"e",,,,,
+"File.Edit","s","","79","1712434937327","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"80","1712434937329","demo.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit"," ","","80","1712434937829","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"81","1712434937832","demo.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","h","","81","1712434938132","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","h",,"82","1712434938141","demo.py","1.1.5 for 2021-2022 @t1",,"h",,,,,
+"File.Edit","e","","82","1712434938275","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","e",,"83","1712434938278","demo.py","1.1.5 for 2021-2022 @t1",,"e",,,,,
+"File.Edit","r","","83","1712434938353","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","r",,"84","1712434938355","demo.py","1.1.5 for 2021-2022 @t1",,"r",,,,,
+"File.Edit","e","","84","1712434938527","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","e",,"85","1712434938529","demo.py","1.1.5 for 2021-2022 @t1",,"e",,,,,
+"File.Edit","?","","85","1712434939205","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","?",,"86","1712434939207","demo.py","1.1.5 for 2021-2022 @t1",,"?",,,,,
+"File.Edit"," ","","86","1712434939334","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"87","1712434939338","demo.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","W","","87","1712434940423","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","W",,"88","1712434940430","demo.py","1.1.5 for 2021-2022 @t1",,"W",,,,,
+"File.Edit","r","","88","1712434940846","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","r",,"89","1712434940848","demo.py","1.1.5 for 2021-2022 @t1",,"r",,,,,
+"X-Action","Backspace",,,"1712434941242","demo.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","r","88","1712434941258","demo.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"File.Edit","o","","88","1712434941498","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","o",,"89","1712434941507","demo.py","1.1.5 for 2021-2022 @t1",,"o",,,,,
+"File.Edit","r","","89","1712434941601","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","r",,"90","1712434941607","demo.py","1.1.5 for 2021-2022 @t1",,"r",,,,,
+"File.Edit","k","","90","1712434941689","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","k",,"91","1712434941692","demo.py","1.1.5 for 2021-2022 @t1",,"k",,,,,
+"File.Edit"," ","","91","1712434941788","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"92","1712434941791","demo.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","p","","92","1712434942021","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","p",,"93","1712434942028","demo.py","1.1.5 for 2021-2022 @t1",,"p",,,,,
+"File.Edit","l","","93","1712434942204","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","l",,"94","1712434942207","demo.py","1.1.5 for 2021-2022 @t1",,"l",,,,,
+"File.Edit","e","","94","1712434942327","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","e",,"95","1712434942329","demo.py","1.1.5 for 2021-2022 @t1",,"e",,,,,
+"File.Edit","a","","95","1712434942476","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","a",,"96","1712434942479","demo.py","1.1.5 for 2021-2022 @t1",,"a",,,,,
+"File.Edit","s","","96","1712434942560","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"97","1712434942562","demo.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit","e","","97","1712434942704","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","e",,"98","1712434942708","demo.py","1.1.5 for 2021-2022 @t1",,"e",,,,,
+"File.Edit",".","","98","1712434943428","demo.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke",".",,"99","1712434943439","demo.py","1.1.5 for 2021-2022 @t1",,".",,,,,
+"X-Action","Use Python 3.10",,,"1712434946087","demo.py","1.1.5 for 2021-2022 @t1",,"Use Python 3.10",,,,,
