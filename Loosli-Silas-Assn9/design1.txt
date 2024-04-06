@@ -1,0 +1,66 @@
+import everything into the main task1 code, create a variable for the screen width and height
+
+The enemy:
+    1. Use code from flip flop boing
+    2. create a class to use as the enemy, either cat or enemy
+    3. assign the picture of tom to the cat object as cat.image
+    4. define where the cat will strt using cat.start_x = SCREEN_WIDTH // 2 and cat.start_y = SCREEN_HEIGHT // 2
+    5. create a rectangle object that will be what the cat head interacts with
+        cat.rect = cat.image.get_rect(center=[ball.start_X, ball.start_y])
+    6. Set the speed of the cat head, using cat.change_X and cat.change_y
+
+    return the cat object
+
+    move the enemy
+        use code from flip-flop boing, basically cat.rect.x += cat.change_x
+        same thing, cat.rect.y += cat.change_y
+        if the cat hits one of the  sides, make the boing sound and change its direction, basically the same as flip flop boing or any of the object demos we did
+
+    reset the enemy function
+        use cat.rect = cat.image.get_rect(center=[cat.start_x, cat.start_y])
+
+The Cheese:
+    1. Get randint imported so that the cheese can be randomly placed
+    2. basically copy the code from enemy, except leave out the change parts and make the starting value as randint
+    3. scratch that, actiually put the functions into the class, turning them into methods. 
+    4. Use the code from the first bounce house demo to be able to create a lot of different objects, use self.screen, self.image, self.position, and self.rect.
+    5. create another method that is just used to draw these cheeses... The first method was the __init__ function.
+    6. in the init function, make the self.position a random int from one side of the screen to the other but make sure that the cheese can't spawn outside of the screen, using the getwidth() and getheight() functions to  add/ subtract the positions from all sides.
+
+The Player:
+    1. use code from the paddle in flip flop boing to move it, but start it the same way as any other entity, with a class
+    2. define make_mouse(filename, mouse_speed, screen_width, screen_height)
+    3. assign a picture to the mouse using the image.load funtion
+    4.in addition to screen width and screen height, we need to tell the computer which way we want the character to move, so we need a speed to go along with it (hence the update on the parameters)
+    5. give the mouse a starting value, using getheight() again to be able to put the mose at the very bottom of the screen without  the head going below the screen.
+    6. return mouse so that it can be used again inside of move_mouse
+    7. define move mouse with move_mouse(mouse, screen_width, screen_height, direction, movement=0)
+    8. the movement is zero so that if the key is not pressed, the mouse will not move in that direction
+    9. set an if statement so that if the up/down keys are pressed (the y coordinate must change) so the mouse rectangle must move either up or down whatever speed was set previously, so mouse.rect.y += mouse.move_distance * movement
+    10. set an if statement which is for the x value using the same logic as before to move it left and right, make sure these are both **if** statments not **elif** statements so that the mouse can move multiple ways at a time
+    11. set a bunch of if statemnts, saying that if the mouse's sides reach any of the sides, the program will let it go no further, and will just set that side  to zero, or to whatever the screen width/heigh is
+    12. reset mouse:
+        12a. Basically, just put the mouse back at the bottom of the screen using logic established around step 5 of "The Player"
+
+The Main function in task1
+    here's where it gets very convoluted:
+    1. import whatever is needed into the task1 code, copy the starter, and change what is needed.
+    2. get the sound/media/images imported using mixer.Sound and import the images to a variable that suits them.
+    3. this for loop should be for i in range(the number of cheeses wanted on screen) and it should append to some list the cheese object from __init__ inside of the Cheese class
+    3a. start the timer for the program, and start the music for the program
+    4. start the main loop by making sure that pygame stops if the x is pressed, create a conditional that runs if game is over, since we want this to run before anything else, meaning the game ends immediately, not one second late or anything
+        when it stops, make sure that if the user presses space, the game restarts (part of the starter code) and when it restarts, use the same for loop that started the program with cheeses 
+    5. check for user input in the corresponding movement keys, apply the correct movement to them using the move_mouse function from player
+    6. draw these items to the screen
+    7. check for collisions with any cheese in that cheese list, and if there are any collisions, remove that specific cheese from the list and create a chomp sound
+    8. now we check to see if the cat has hit the mouse, and if so, we play the ending sound and the game ends, 
+    9. check to see if the length of the list created for cheese is empty, meaning that the screen has been fully cleared of cheese, also end the game, but give a win statement as well to tell the program that we have won
+    10. stop the timer if any of these conditions are met
+    11. if the game is over, stop the timer, put a background in, and display text corresponding to whether or not the player won. Also record the final time and display that as well. This is code pulled from both flip flop boing and object practice 3. 
+        the timer was not working, would just keep counting down, so i added in something that would be set by the winning or loosing if statements previously that would only be activated once so that the timeer didn't just keep running
+    12. now that the program is pretty much done and working, I get to add a little bit of **SPICE*** 
+        I put in a little difficulty selector at the top, sometimes it's a little finicky and likes to give you the hardest difficulty (which is possible, just very difficult), which you use at the beginning of the program. I was not able to get working/didn't want to put the hours into getting working reselecting the difficulty after pressing space, so to do that you must exit the program and restart.
+        in addition, once you get to 100, you get a little celebratory text bit that congratulates you on your achievements
+        also, if you press anything that isn't in the menu for difficulties, it will give you the ultra-hard, which is manageable, but just very difficult.
+
+Anyway, hope you like the program, and try and get a new high score, mine's currently 1000 because I was bored, but see if you can do better! Thanks!!
