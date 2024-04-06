@@ -1,0 +1,40 @@
+1. import drawly
+2. Give a welcome to the program message
+3. Prompt the user for:
+    Superhero name
+    Body size - This is the diameter of their body.
+    Location - X, Y location. Use two prompts to get this
+    Arm length
+    Leg length
+            ** make sure the leg length is longer than the arm length with a loop telling them to input values until they get it right
+    Sword length
+            ** The arm length plus the sword length must be longer than the leg length. Start another loop to get it right until they do get it right
+    Voice power (distance from center of body)
+            ** The voice power must be longer than the arm length plus sword length. Start another loop to make sure they get it right this time
+4. Welcome the superhero to the stage
+4a. Give them a hard time if they are not ready and an easy time if they are
+5. Prompt the user for the villain
+    name
+    body size (also diameter)
+    location
+6. Give a scalding message to enter the villain into the stage
+7. Display "Hit enter to help {superhero_name} fight {villain_name}"
+8. Create a drawly window
+    title it {superhero_name} vs. {villain_name}
+    draw the superhero
+        black dot for the superhero
+    draw the villain
+        red dot for the villain
+    draw the rings for attack radii (all of these are thin circles)
+        arm_attack == radius + arm_length -- wheat color
+        leg_attack == radius + leg_length -- blue color
+        sword_attack == radius + arm_length + sword_length -- grey color
+        voice_attack -- yellow color
+9. Determine the total distance between the superhero and the villain
+    distance == ((villain_x - superhero_x) ** 2 + (villain_y - superhero_y) ** 2) ** 0.5
+10. use the distance between the superhero and the villain to determine what the closest attack could be
+    print out a special message for each attack
+        ** account for the radius of both the superhero and the villain while doing this
+
+funny message:
+print("Keep in mind this situation is highly theoretical, don't try this at home")

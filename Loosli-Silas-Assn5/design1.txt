@@ -1,0 +1,33 @@
+1. Print a welcome message
+2. Indent a line to get the user to enter a year (4 digits)
+3. loop until the user enters a 4-digit number and no letters
+4. make a blank line between the input and output
+5. Calculate if the 4-digit number is a leap year
+
+    - figure out what the first 2 digits are
+        - Integer divide by 100
+    - figure out what the 3rd digit is
+        - subtract the first 2 numbers from the original
+        - integer divide by 10
+    - figure out what the 4th digit is
+        - subtract the first 3 numbers from the original
+    
+    Cases for it being a leap year in the Fronkian Calendar
+    -Case 1
+        - the year is divisible by 9
+        - the last 2 digits of the year do not match
+    -Case 2
+        - the sum of the lst 2 digits equals the first 2 digits
+
+        - the 3rd digit is even
+               - use the second to 4th digit and modulus it with 2 to output 0
+
+        - the 3rd digit is less than the 4th digit
+            - simple logical operator comparing the 2 4th digits
+
+6. print a result message
+    - Thank you for using the Fronkian Leap Year Calculator.
+    - \t The year you selected is a leap year, Happy leap year!
+    - \t The year you selected is not a leap year, sorry.
+
+

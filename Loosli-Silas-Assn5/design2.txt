@@ -1,0 +1,19 @@
+a. Create a class called animal
+b. create a list to store the different animals in
+1. Print a welcome message
+2. Get user input for 3 different animals
+    - Type of animal
+    - Number of these animals seen
+    - What the animal said
+3. Print a message about putting these animals into the animal-combine-inator
+4. Get the user to hit enter to see the results
+5. Print indented messages:
+    - total number of animals seen
+    - types of animals seen
+    - each animal type and what they said (one sentence each)
+    - A new animal output from the animal-combine-inator
+        ** Average number of animals seen is the number of animals it creates
+        ** combine the animals names randomly
+            - Use a list with the names and use random shuffle to grab them randomly
+        ** the animal speaks a random assortment of original animal sounds
+            - Use a list with the sounds and use random shuffle to grab them randomly

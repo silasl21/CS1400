@@ -1,0 +1,220 @@
+"EventType","InsertText","DeleteText","SourceLocation","ClientTimestamp","CodeStateSection","ToolInstances","EditType","X-Metadata","CodeStateID","X-Compilable","EventID","SubjectID","AssignmentID"
+"X-Action","ShowYourWork Init","","","1712433449016",,"1.1.5 for 2021-2022 @t1",,"Init",,,,,
+"X-Action","Enter",,,"1712433482093","task1.py","1.1.5 for 2021-2022 @t1",,"Enter",,,,,
+"File.Edit","from utility import NAMES, HOMETOWNS, AGE_RANGE
+from person import Person
+from random import randint
+from time import sleep
+
+
+def main():
+    print(""Welcome to the Peopleinator"")
+    input(""\tHit Enter to Begin"")
+    print()
+    thinking(""Creating People List"")
+    print()
+
+    ##### Create and Display the People List #####
+    people_list = create_people_list()
+
+    print(""People List"")
+    for i in people_list:
+        print(i)
+    print()
+
+    ##### Create and Display the Hometown List #####
+    input(""Hit Enter to group by Hometown"")
+    thinking(""\tProcessing"")
+    print()
+    hometown_list = create_hometown_list(people_list)
+
+    print(""Hometown List"")
+    for i in hometown_list:
+        print(i)
+    print()
+
+    ##### Create and Display the Age List #####
+    input(""Hit Enter to group by Age"")
+    thinking(""\tProcessing"")
+    print()
+    age_list = create_age_list(people_list)
+
+    print(""Age List"")
+    for i in age_list:
+        print(i)
+    print()
+
+    ##### Display a Person object by entering an id. Use the original people_list #####
+    print(""Find a person by their id"")
+    while True:
+        person_id = input(""Enter an id from 0 to "" + str(len(HOMETOWNS) * len(NAMES) - 1) + "" (Enter without number to end): "")
+        if person_id == """": # Stop when the user just hits enter
+            break
+
+        print(get_person_by_id(people_list, int(person_id)))
+    print()
+
+    ##### Thank You Message #####
+    print(""Thanks for using Peopleinator"")
+
+def create_people_list():
+    return []
+
+def create_hometown_list(people_list):
+    return []
+
+def create_age_list(people_list):
+
+
+    return []
+
+def get_person_by_id(people_list, person_id):
+    return people_list[""?""][""?""]
+
+def thinking(msg):
+    print(msg, end="""")
+    for i in range(5):
+        print(""."", end="""")
+        sleep(0.5)
+    print()
+
+main()","","0","1712433482157","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"File.Edit","#","","125","1712433483222","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","#",,"126","1712433483235","task1.py","1.1.5 for 2021-2022 @t1",,"#",,,,,
+"File.Edit"," ","","126","1712433483296","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"127","1712433483297","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","D","","127","1712433483965","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","D",,"128","1712433483966","task1.py","1.1.5 for 2021-2022 @t1",,"D",,,,,
+"File.Edit","o","","128","1712433484101","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","o",,"129","1712433484107","task1.py","1.1.5 for 2021-2022 @t1",,"o",,,,,
+"File.Edit","e","","129","1712433484234","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","e",,"130","1712433484236","task1.py","1.1.5 for 2021-2022 @t1",,"e",,,,,
+"File.Edit","s","","130","1712433484371","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"131","1712433484371","task1.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit"," ","","131","1712433484461","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"132","1712433484462","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","t","","132","1712433484597","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","t",,"133","1712433484598","task1.py","1.1.5 for 2021-2022 @t1",,"t",,,,,
+"File.Edit","h","","133","1712433484669","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","h",,"134","1712433484670","task1.py","1.1.5 for 2021-2022 @t1",,"h",,,,,
+"File.Edit","i","","134","1712433484763","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","i",,"135","1712433484764","task1.py","1.1.5 for 2021-2022 @t1",,"i",,,,,
+"File.Edit","s","","135","1712433484980","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"136","1712433484980","task1.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit"," ","","136","1712433485095","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"137","1712433485096","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"X-Keystroke","#",,"126","1712433483234","task1.py","1.1.5 for 2021-2022 @t1",,"#",,,,,
+"X-Keystroke"," ",,"127","1712433483297","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"X-Keystroke","D",,"128","1712433483966","task1.py","1.1.5 for 2021-2022 @t1",,"D",,,,,
+"X-Keystroke","o",,"129","1712433484107","task1.py","1.1.5 for 2021-2022 @t1",,"o",,,,,
+"X-Keystroke","e",,"130","1712433484236","task1.py","1.1.5 for 2021-2022 @t1",,"e",,,,,
+"X-Keystroke","s",,"131","1712433484371","task1.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"X-Keystroke"," ",,"132","1712433484462","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"X-Keystroke","t",,"133","1712433484598","task1.py","1.1.5 for 2021-2022 @t1",,"t",,,,,
+"X-Keystroke","h",,"134","1712433484670","task1.py","1.1.5 for 2021-2022 @t1",,"h",,,,,
+"X-Keystroke","i",,"135","1712433484764","task1.py","1.1.5 for 2021-2022 @t1",,"i",,,,,
+"X-Keystroke","s",,"136","1712433484980","task1.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"X-Keystroke"," ",,"137","1712433485096","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"X-Keystroke","c",,"138","1712433485251","task1.py","1.1.5 for 2021-2022 @t1",,"c",,,,,
+"X-Keystroke","h",,"139","1712433485367","task1.py","1.1.5 for 2021-2022 @t1",,"h",,,,,
+"X-Keystroke","a",,"140","1712433485461","task1.py","1.1.5 for 2021-2022 @t1",,"a",,,,,
+"X-Keystroke","n",,"141","1712433485598","task1.py","1.1.5 for 2021-2022 @t1",,"n",,,,,
+"X-Keystroke","g",,"142","1712433485637","task1.py","1.1.5 for 2021-2022 @t1",,"g",,,,,
+"X-Keystroke","e",,"143","1712433485780","task1.py","1.1.5 for 2021-2022 @t1",,"e",,,,,
+"X-Keystroke"," ",,"144","1712433485854","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","c","","137","1712433485251","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","c",,"138","1712433485251","task1.py","1.1.5 for 2021-2022 @t1",,"c",,,,,
+"File.Edit","h","","138","1712433485366","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","h",,"139","1712433485367","task1.py","1.1.5 for 2021-2022 @t1",,"h",,,,,
+"File.Edit","a","","139","1712433485460","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","a",,"140","1712433485461","task1.py","1.1.5 for 2021-2022 @t1",,"a",,,,,
+"File.Edit","n","","140","1712433485597","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","n",,"141","1712433485598","task1.py","1.1.5 for 2021-2022 @t1",,"n",,,,,
+"File.Edit","g","","141","1712433485636","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","g",,"142","1712433485637","task1.py","1.1.5 for 2021-2022 @t1",,"g",,,,,
+"File.Edit","e","","142","1712433485779","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","e",,"143","1712433485780","task1.py","1.1.5 for 2021-2022 @t1",,"e",,,,,
+"File.Edit"," ","","143","1712433485853","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"144","1712433485854","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","a","","144","1712433486315","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","a",,"145","1712433486316","task1.py","1.1.5 for 2021-2022 @t1",,"a",,,,,
+"File.Edit","n","","145","1712433486419","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","n",,"146","1712433486420","task1.py","1.1.5 for 2021-2022 @t1",,"n",,,,,
+"File.Edit","y","","146","1712433486611","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","y",,"147","1712433486613","task1.py","1.1.5 for 2021-2022 @t1",,"y",,,,,
+"File.Edit","g","","147","1712433486803","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","g",,"148","1712433486804","task1.py","1.1.5 for 2021-2022 @t1",,"g",,,,,
+"File.Edit","h","","148","1712433486851","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","h",,"149","1712433486852","task1.py","1.1.5 for 2021-2022 @t1",,"h",,,,,
+"File.Edit","u","","149","1712433486996","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","u",,"150","1712433486997","task1.py","1.1.5 for 2021-2022 @t1",,"u",,,,,
+"File.Edit","i","","150","1712433487001","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","i",,"151","1712433487001","task1.py","1.1.5 for 2021-2022 @t1",,"i",,,,,
+"File.Edit","n","","151","1712433487078","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","n",,"152","1712433487078","task1.py","1.1.5 for 2021-2022 @t1",,"n",,,,,
+"X-Action","Backspace",,,"1712433487316","task1.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","n","151","1712433487326","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1712433487450","task1.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","i","150","1712433487451","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1712433487571","task1.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","u","149","1712433487572","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1712433487699","task1.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","h","148","1712433487701","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1712433487826","task1.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","g","147","1712433487828","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"File.Edit","t","","147","1712433487955","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","t",,"148","1712433487956","task1.py","1.1.5 for 2021-2022 @t1",,"t",,,,,
+"File.Edit","h","","148","1712433488084","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","h",,"149","1712433488084","task1.py","1.1.5 for 2021-2022 @t1",,"h",,,,,
+"File.Edit","i","","149","1712433488139","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","i",,"150","1712433488140","task1.py","1.1.5 for 2021-2022 @t1",,"i",,,,,
+"X-Keystroke","a",,"145","1712433486316","task1.py","1.1.5 for 2021-2022 @t1",,"a",,,,,
+"X-Keystroke","n",,"146","1712433486420","task1.py","1.1.5 for 2021-2022 @t1",,"n",,,,,
+"X-Keystroke","y",,"147","1712433486613","task1.py","1.1.5 for 2021-2022 @t1",,"y",,,,,
+"X-Keystroke","g",,"148","1712433486804","task1.py","1.1.5 for 2021-2022 @t1",,"g",,,,,
+"X-Keystroke","h",,"149","1712433486852","task1.py","1.1.5 for 2021-2022 @t1",,"h",,,,,
+"X-Keystroke","u",,"150","1712433486997","task1.py","1.1.5 for 2021-2022 @t1",,"u",,,,,
+"X-Keystroke","i",,"151","1712433487001","task1.py","1.1.5 for 2021-2022 @t1",,"i",,,,,
+"X-Keystroke","n",,"152","1712433487078","task1.py","1.1.5 for 2021-2022 @t1",,"n",,,,,
+"X-Keystroke","t",,"148","1712433487956","task1.py","1.1.5 for 2021-2022 @t1",,"t",,,,,
+"X-Keystroke","h",,"149","1712433488084","task1.py","1.1.5 for 2021-2022 @t1",,"h",,,,,
+"X-Keystroke","i",,"150","1712433488140","task1.py","1.1.5 for 2021-2022 @t1",,"i",,,,,
+"X-Keystroke","n",,"151","1712433488286","task1.py","1.1.5 for 2021-2022 @t1",,"n",,,,,
+"X-Keystroke","g",,"152","1712433488338","task1.py","1.1.5 for 2021-2022 @t1",,"g",,,,,
+"X-Keystroke"," ",,"153","1712433488391","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"X-Keystroke","i",,"154","1712433488476","task1.py","1.1.5 for 2021-2022 @t1",,"i",,,,,
+"X-Keystroke","n",,"155","1712433488556","task1.py","1.1.5 for 2021-2022 @t1",,"n",,,,,
+"X-Keystroke"," ",,"156","1712433488601","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"X-Keystroke","g",,"157","1712433488780","task1.py","1.1.5 for 2021-2022 @t1",,"g",,,,,
+"X-Keystroke","i",,"158","1712433488940","task1.py","1.1.5 for 2021-2022 @t1",,"i",,,,,
+"X-Keystroke","t",,"159","1712433489140","task1.py","1.1.5 for 2021-2022 @t1",,"t",,,,,
+"File.Edit","n","","150","1712433488285","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","n",,"151","1712433488286","task1.py","1.1.5 for 2021-2022 @t1",,"n",,,,,
+"File.Edit","g","","151","1712433488338","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","g",,"152","1712433488338","task1.py","1.1.5 for 2021-2022 @t1",,"g",,,,,
+"File.Edit"," ","","152","1712433488390","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"153","1712433488391","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","i","","153","1712433488475","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","i",,"154","1712433488476","task1.py","1.1.5 for 2021-2022 @t1",,"i",,,,,
+"File.Edit","n","","154","1712433488555","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","n",,"155","1712433488556","task1.py","1.1.5 for 2021-2022 @t1",,"n",,,,,
+"File.Edit"," ","","155","1712433488599","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"156","1712433488601","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","g","","156","1712433488779","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","g",,"157","1712433488780","task1.py","1.1.5 for 2021-2022 @t1",,"g",,,,,
+"File.Edit","i","","157","1712433488940","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","i",,"158","1712433488940","task1.py","1.1.5 for 2021-2022 @t1",,"i",,,,,
+"File.Edit","t","","158","1712433489139","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","t",,"159","1712433489140","task1.py","1.1.5 for 2021-2022 @t1",,"t",,,,,
+"File.Edit","h","","159","1712433489489","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","h",,"160","1712433489489","task1.py","1.1.5 for 2021-2022 @t1",,"h",,,,,
+"File.Edit","u","","160","1712433489619","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","u",,"161","1712433489619","task1.py","1.1.5 for 2021-2022 @t1",,"u",,,,,
+"File.Edit","b","","161","1712433489803","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","b",,"162","1712433489803","task1.py","1.1.5 for 2021-2022 @t1",,"b",,,,,
+"File.Edit","?","","162","1712433490652","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","?",,"163","1712433490652","task1.py","1.1.5 for 2021-2022 @t1",,"?",,,,,
+"X-Keystroke","h",,"160","1712433489489","task1.py","1.1.5 for 2021-2022 @t1",,"h",,,,,
+"X-Keystroke","u",,"161","1712433489619","task1.py","1.1.5 for 2021-2022 @t1",,"u",,,,,
+"X-Keystroke","b",,"162","1712433489803","task1.py","1.1.5 for 2021-2022 @t1",,"b",,,,,
+"X-Keystroke","?",,"163","1712433490652","task1.py","1.1.5 for 2021-2022 @t1",,"?",,,,,

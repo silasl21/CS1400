@@ -1,0 +1,30 @@
+###########
+This project was completed by Oliver, Luke, Sahaja, and Silas
+###########
+
+def draw_rectangle_pattern, use all parameters given
+    start for loop from 0 to 360 with step of 360/count
+        random the color
+        get distance for each point of circle, using module given, set a variable in x and y directions
+        draw the rectangle at location, make rotation angle change with degree and add rotation. make rotate by top left
+        drawly.draw()
+
+def draw_circle_pattern, use all parameters given
+    for loop with same parameters as previous for loop
+        random the color
+        get distance for each point of circle using module given, add the radius of circles, and set variables for positions in x and y directions
+        draw the circle with x and y position as specified before as well as radius from input
+        drawly.draw()
+
+def draw_super_pattern with parameters of only num of patterns
+    make variables for parameters so random numbers stay within boundaries
+    for loop with range of num patterns to repeat patterns as needed
+        make a random variable choose between 2 options, rectangle or circle
+        if statement to decide which function the randint chose
+            draw_rectangle_pattern with randints as all parameters, use variables from before as boundaries
+        if statement to decide which function the randint chose
+            draw_circle_pattern with randints as all parameters, use variables from before as boundaries
+
+
+within main:
+    adjust main funciton to add inputs for all necesary parameters, just follow which parameters are given.

@@ -1,0 +1,38 @@
+Prompt the user for their name.
+Open a window with the title "Alice's Faceinator".
+Replace Alice, with whatever the user's name is
+Retrieve the following inputs from the user for drawing the head
+Location (x and y coordinates)
+Size (radius)
+Color
+Remember to use the proper conversion functions (int, str, etc...)
+Draw the head
+Make sure the head has a black outline
+Retrieve the following inputs from the user for drawing the eyes
+Location for eye 1
+Location for eye 2
+Size (Either same size for both eyes or different size, your choice)
+Color (same color for both eyes)
+Draw the eyes
+Retrieve the following inputs from the user for drawing the mouth
+Color
+Line thickness
+All the info you need to draw the mouth
+If it is an arc, collect the x_pos, y_pos, width, height, start, and end values
+If it is a line, collect the x_1, y_1, x_2, y_2 for each line segment
+Draw the mouth
+Draw the name of the user
+Use drawly.text
+Make sure the name is 25 units above the top of the head (use the radius here)
+The x position can be anywhere for the name
+Keep in mind that the purpose isn't really to draw a face, it's to learn to program. Keep the following in mind as you write your program.
+
+Comment in a helpful way
+Prompts should be meaningful to user.
+Good: Enter the x-coordinate for the left eye:
+Bad: Enter a number:
+Use welcome and goodbye/thank you messages to make things nice for the user experience
+Use proper variables names
+Naming convention
+Meaning
+Use type conversion properly when you get input

@@ -1,0 +1,39 @@
+1. Paste in the designated code from the assignment into the main task2.py file
+    - fill in import spot to import draw_chessboard from chessboard.py
+    - fill in code to get the input from the user
+        1. Get the start x-coordinate for the top left corner
+        2. Get the starting y-coordinate for the top left corner
+        3. Get the width (if they don't input anything it is ok)
+        4. get the height (again, if they don't input anything it is ok)
+Functions
+    draw_chessboard(start_x, start_y, width=250, height=250)
+      * parameters are from starter code, width and height are set to default to 250 due to instructions *
+
+        1. Start drawly
+        2. Set drawly speed to 10 so that things happen quickly
+        3. call draw_rectangle() to draw the border and make sure that the border value is True
+        4. call draw_all_rectangles() to draw the inner part of the chessboard
+        5. call drawly.done()
+
+    draw_rectangle(start_x, start_y, width, height, border=False)
+        * parameters are set to go with requirements. This function is just basically a shortcut for a drawly rectangle. The border is typically set to false
+
+        0a. set the color to black
+        1. set a conditional to say that if border is true, create a variable that is 1 for stroke width, otherwise make sure that it stays at zero (if/else)
+        2. create a rectangle using the parameters set in the function using drawly.rectangle
+        3. call drawly.draw()
+
+    draw_all_rectangles(start_x, start_y, width, height)
+        start a variable to determine the x and y of each little rectangle
+
+        1. use a for loop for each of the 8 rows
+            1. set the x position to the left side of the board
+            - if  the row number is even
+                - add 1/8 the width of the board to the initial x value
+            2. create another for loop for the 4 rectangles inside each row
+                - draw a rectangle using the width and height divided by 8 and the newly set x and y values, make sure that the border value i
+                - add 2/8 the width of the board to the initial x-value
+                
+            3. move the y position to the next line adding the 1/8 the height to the original y-value
+
+

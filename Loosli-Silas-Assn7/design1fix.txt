@@ -1,0 +1,9 @@
+The problem is that there are no spaces inserted for  the beginning each number, so it is not a pyramid, but it is a negative slope.
+    fix -- add the number of spaces from the number of rows minus i to each successive line
+    fix for the 10's place digit having an extra space, add 5 spaces to the front of the numbers if the number entered has more than 2 digits
+
+    second fix: find the max amount of digits there should be in a given row, and add extra spaces to each number instead of just adding an extra 5 spaces to each in the 1's place
+
+    further fixing needed:
+     - forgot to calculate the amount of space needed with the spaces in between each number, adding that into the calculations of the max digits
+     - added a space in between each number, now it spaces itself out evenly all the way up to 100 (I can't test higher than that because my screen is not wide enough to display further than 110. Until then it performs admirably and I would assume that upwards of that it would also perform admirably.

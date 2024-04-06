@@ -1,0 +1,57 @@
+import drawly
+import random
+import time
+0a. paste in the extra code from the assignment
+1. Open a drawly window, give it a black background. drawly.start(An Unassuming Thermometer, (720, 720), "black")
+1a. give a welcome statment and introduce the user to the game. Prompt the user using input to continue.
+2. Create a scene, using a function definition: redraw(score)
+    - have a point score set by the score in redraw(score)
+        - use drawly.text(f"Score: {score}") of some size that fits the screen well in the top left corner
+    - create a thermometer with 2 boxes that is a total of 500 pixels tall using 2 drawly.rectangle() functions
+    - don't call drawly.draw during the function definition otherwise it will be a blocky sorta change
+3. create a function, question()
+    - use random to create 2 different random integers from 1 to 100 in 2 variables called num1 and num2
+    - add those together in a variable, sum
+4. ask the question in a defined function
+    - start a variable called start_time using time.time()
+    - ask what the 2 numbers added together are with user_answer = int(input(f"\t{num1} + {num2} = "))
+    - recored elapsed time by using elapsed_time = time.time() - start time
+    - set a variable answer = False
+5. get the point value from the answer using a defined function
+        - if elapsed_time <= 0 sec:
+            - score_change = game.POINT_LIST[0}
+        - elif elapsed_time <= 2:
+            - score_change = game.POINT_LIST[1]
+        - elif elapsed_time <= 3:
+            - score_change = game.POINT_LIST[2]
+        - elif elapsed_time <= 4:
+            - score_change = game.POINT_LIST[3]
+        - else:
+            - score_change += game.POINT_LIST[4]
+    - if answer: -- meaning if the answer is true
+        score += score_change
+    - else:
+        score -= score_change
+     return the score change because score will already be returned
+
+6. Create an animation function
+    - 6 if statements:
+    ** if the bar is going to go over one of the edges, stop the loop immediately
+        - if the answer is incorrect and the points negative
+            - start a for statement that will move the red negative bar downwards. simple addition of i to the height
+        - if the answer is correct and the points are negative
+            - start a for statement that will move the red negative bar upwards. break it if the bar gets to the middle
+            - if the score > zero, change the color to green and continue to move up
+        - if the answer is correct and the points are positive
+            - start a for statement that will move the green positive bar upwards
+        - if the answer is incorrect and the points are positive
+            - start a for statement that will move the green bar down, break if the bar gets to the center
+            - if the score is less than 0, switch the color to red and continue downwards
+        - if the answer is correct and the points are zero
+            - start a for statement that brings the green bar up
+        - if the answer is incorrect and the points are zero
+            - start a for statement that brings the red bar down
+        - redraw inside every for statement that is decreasing the bar size
+
+       if the question is correct, if statement for if the bar is negative and if statement for if the bar is positive
+       if the question is incorrect, if statement for if the bar is positive and if it is alrady negative
