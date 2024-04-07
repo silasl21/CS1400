@@ -55,15 +55,18 @@ def main():
     print("Thanks for using Peopleinator")
 
 def create_people_list():
-    return []
+    people_list = []
+    for i in NAMES:
+        pass
+    return people_list
 
 def create_hometown_list(people_list):
-    return []
+    hometown_list = []
+    return hometown_list
 
 def create_age_list(people_list):
-
-
-    return []
+    age_list = []
+    return age_list
 
 def get_person_by_id(people_list, person_id):
     return people_list["?"]["?"]
