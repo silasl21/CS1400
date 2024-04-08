@@ -1,0 +1,50 @@
+Create People List:
+    Create an empty list that will store all of our people objects
+    loop through each name and hometown combination, create a Person object for each combo
+    add a number to the identifier each time
+    give each appended person object a random number age within the age range set
+    append the person object to the empty people list, loop this
+    return the people list
+
+Create Hometown List:
+    create an empty hometown list, create sublists for each hometown
+    loop through each person in the people list and extract their hometown using the get hometown method
+    calculate the upper search id and inner search id to access each person in the people list
+    get the hometown of the person using the get_hometown() function
+    append each person to the corresponding sublist in hometown_list based on their hometown
+    return the hometown list
+
+Create age list:
+    Create an empty age list
+    iterates over each person in the list
+    retireve the age of each person using get_age()
+    calculate the index of the corresponding age group within age_list
+        subtract the age of the person from the minimum age,  and use this final age to add it to the corresponding sublist
+    append everything
+    return the age list
+
+get person by id
+    first check to see if the input is valid, then give a none output if not.
+    start a count variable to keep track of how many objects have gone through, iterate over each sublist and then iterate over each person inside the sublist.
+    compare the cound and person id, then if they match return the person object.
+    add one to the count each time we go through this
+    return the person object and let the starter code do the rest.
+
+
+UML for person class
+
+ --------------------------------------------
+|                Person                      |
+ --------------------------------------------
+|    -id: int                                |
+|    -age: int                               |
+ --------------------------------------------
+|                                            |
+|    + __init(id: int, age: int): None       |
+|    + get_name(): string                    |
+|    + get_hometown(): string                |
+|    + get_age(): integer                    |
+|    + gat_id(): integer                     |
+|    + __repr__(): string                    |
+|    + __str__(): string                     |
+ --------------------------------------------
