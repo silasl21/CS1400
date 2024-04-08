@@ -27,7 +27,7 @@ AGE_RANGE = [18, 25] # Ages given are possible ages
 
 
 
-######### Set 2 ########
+# ######## Set 2 ########
 # NAMES = ["Diana",
 #          "Luke",
 #          "Wanda",

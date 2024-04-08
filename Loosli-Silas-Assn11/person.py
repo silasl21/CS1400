@@ -1,5 +1,6 @@
 from utility import NAMES, HOMETOWNS
 
+
 class Person:
     def __init__(self, id, age):
         self.__id = id
@@ -7,13 +8,12 @@ class Person:
         self.__age = age
         # this should be a random value from the range of values defined by AGE_RANGE
 
-
     def get_name(self):
-        name = NAMES[self.__id - 1]
+        name = NAMES[self.__id // len(HOMETOWNS)]
         return name
 
     def get_hometown(self):
-        hometown = HOMETOWNS[self.__id]
+        hometown = HOMETOWNS[self.__id % len(HOMETOWNS)]
         return hometown
 
     def get_age(self):
