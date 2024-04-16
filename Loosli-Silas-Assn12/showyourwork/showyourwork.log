@@ -1,5 +1,127 @@
 "EventType","InsertText","DeleteText","SourceLocation","ClientTimestamp","CodeStateSection","ToolInstances","EditType","X-Metadata","CodeStateID","X-Compilable","EventID","SubjectID","AssignmentID"
-"X-Action","ShowYourWork Init","","","1713298249664",,"1.1.5 for 2021-2022 @t1",,"Init",,,,,
+"X-Action","ShowYourWork Init","","","1713302266294",,"1.1.5 for 2021-2022 @t1",,"Init",,,,,
+"X-Action","Tab",,,"1713304105175","starter.py","1.1.5 for 2021-2022 @t1",,"Tab",,,,,
+"File.Edit","import pygame
+
+
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 800
+CLOCK_DELAY = 30
+TITLE = ""Crashtopolis""
+
+
+def main():
+
+    # Pygame initial setup
+    pygame.init()
+    screen = pygame.display.set_mode([SCREEN_WIDTH, SCREEN_HEIGHT])
+    pygame.display.set_caption(TITLE)
+    clock = pygame.time.Clock()
+
+    ####
+    # Setup media/sound/images
+    ####
+    
+
+    ####
+    # Setup game data
+    ####
+
+
+    # Start the main loop
+    game_over = False
+    running = True
+    while running:
+
+        ####
+        # Collect User Input/Events
+        ####
+
+        # If the user exits the program, break out of the loop
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+
+        ####
+        # Update Game State
+        ####
+
+
+        ####
+        # Update the Display
+        ####
+    
+
+
+        # Update display
+        pygame.display.flip()
+        clock.tick(CLOCK_DELAY)
+
+
+main()
+","","0","1713304105221","starter.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"File.Edit","b","","347","1713304107777","starter.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","b",,"348","1713304107788","starter.py","1.1.5 for 2021-2022 @t1",,"b",,,,,
+"X-Action","Outside edit","","","1713304125424","starter.py","1.1.5 for 2021-2022 @t1",,"Outside Edit",,,,,
+"File.Edit","","import pygame
+
+
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 800
+CLOCK_DELAY = 30
+TITLE = ""Crashtopolis""
+
+
+def main():
+
+    # Pygame initial setup
+    pygame.init()
+    screen = pygame.display.set_mode([SCREEN_WIDTH, SCREEN_HEIGHT])
+    pygame.display.set_caption(TITLE)
+    clock = pygame.time.Clock()
+
+    ####
+    # Setup media/sound/images
+    ####
+    b
+
+    ####
+    # Setup game data
+    ####
+
+
+    # Start the main loop
+    game_over = False
+    running = True
+    while running:
+
+        ####
+        # Collect User Input/Events
+        ####
+
+        # If the user exits the program, break out of the loop
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+
+        ####
+        # Update Game State
+        ####
+
+
+        ####
+        # Update the Display
+        ####
+    
+
+
+        # Update display
+        pygame.display.flip()
+        clock.tick(CLOCK_DELAY)
+
+
+main()
+","0","1713304125427","starter.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
 "File.Edit","import pygame
 
 
@@ -58,8 +180,147 @@ def main():
 
 
 main()
-","","0","1713298386198","starter.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
-"File.Edit","import pygame
+","","0","1713304125427","starter.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Action","ShowYourWork Init","","","1713304125612",,"1.1.5 for 2021-2022 @t1",,"Init",,,,,
+"File.Edit","c","","0","1713304325637","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","c",,"1","1713304325642","cell.py","1.1.5 for 2021-2022 @t1",,"c",,,,,
+"File.Edit","l","","1","1713304326132","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","l",,"2","1713304326135","cell.py","1.1.5 for 2021-2022 @t1",,"l",,,,,
+"File.Edit","a","","2","1713304326556","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","a",,"3","1713304326572","cell.py","1.1.5 for 2021-2022 @t1",,"a",,,,,
+"File.Edit","s","","3","1713304326788","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"4","1713304326821","cell.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit","s","","4","1713304326938","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"5","1713304326950","cell.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit"," ","","5","1713304327287","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"6","1713304327304","cell.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","c","","6","1713304327969","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","c",,"7","1713304327972","cell.py","1.1.5 for 2021-2022 @t1",,"c",,,,,
+"X-Action","Backspace",,,"1713304329421","cell.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","c","6","1713304329444","cell.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"File.Edit","C","","6","1713304330136","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","C",,"7","1713304330143","cell.py","1.1.5 for 2021-2022 @t1",,"C",,,,,
+"File.Edit","e","","7","1713304330710","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","e",,"8","1713304330712","cell.py","1.1.5 for 2021-2022 @t1",,"e",,,,,
+"File.Edit","l","","8","1713304331610","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","l",,"9","1713304331617","cell.py","1.1.5 for 2021-2022 @t1",,"l",,,,,
+"File.Edit","l","","9","1713304331737","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","l",,"10","1713304331739","cell.py","1.1.5 for 2021-2022 @t1",,"l",,,,,
+"File.Edit",":","","10","1713304333774","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke",":",,"11","1713304333778","cell.py","1.1.5 for 2021-2022 @t1",,":",,,,,
+"X-Action","Backspace",,,"1713304335244","cell.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","",":","10","1713304335258","cell.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"File.Edit","9","","10","1713304336441","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","9",,"11","1713304336447","cell.py","1.1.5 for 2021-2022 @t1",,"9",,,,,
+"X-Action","Backspace",,,"1713304337044","cell.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","9","10","1713304337052","cell.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"File.Edit",":","","10","1713304345213","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke",":",,"11","1713304345217","cell.py","1.1.5 for 2021-2022 @t1",,":",,,,,
+"X-Action","Enter",,,"1713304345539","cell.py","1.1.5 for 2021-2022 @t1",,"Enter",,,,,
+"File.Edit","
+","","11","1713304345567","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"File.Edit","    ","","12","1713304345597","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"File.Edit","p","","16","1713304347057","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","p",,"17","1713304347059","cell.py","1.1.5 for 2021-2022 @t1",,"p",,,,,
+"File.Edit","a","","17","1713304347522","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","a",,"18","1713304347560","cell.py","1.1.5 for 2021-2022 @t1",,"a",,,,,
+"File.Edit","s","","18","1713304347685","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"19","1713304347698","cell.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit","a","","19","1713304347705","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","a",,"20","1713304347717","cell.py","1.1.5 for 2021-2022 @t1",,"a",,,,,
+"File.Edit","s","","20","1713304347815","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"21","1713304347817","cell.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"X-Action","Backspace",,,"1713304348345","cell.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","s","20","1713304349045","cell.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713304349056","cell.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","a","19","1713304349058","cell.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"File.Edit","s","","19","1713304350066","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"20","1713304350073","cell.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"X-Action","Enter",,,"1713304352558","cell.py","1.1.5 for 2021-2022 @t1",,"Enter",,,,,
+"File.Edit","
+    ","","20","1713304352563","cell.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"File.Edit","","    ","21","1713304352568","cell.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","EditorChange",,,"1713304353948","cell.py","1.1.5 for 2021-2022 @t1",,"EditorChange",,,,,
+"File.Edit","V","","0","1713304355926","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","V",,"1","1713304355932","player.py","1.1.5 for 2021-2022 @t1",,"V",,,,,
+"File.Edit","l","","1","1713304356509","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","l",,"2","1713304356541","player.py","1.1.5 for 2021-2022 @t1",,"l",,,,,
+"File.Edit","a","","2","1713304357031","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","a",,"3","1713304357034","player.py","1.1.5 for 2021-2022 @t1",,"a",,,,,
+"File.Edit","s","","3","1713304357234","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"4","1713304357240","player.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit","s","","4","1713304357366","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"5","1713304357368","player.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"X-Action","Backspace",,,"1713304357865","player.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","s","4","1713304357869","player.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713304358065","player.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","s","3","1713304358069","player.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713304358249","player.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","a","2","1713304358255","player.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713304358344","player.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","l","1","1713304358347","player.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713304358813","player.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","V","0","1713304358818","player.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"File.Edit","C","","0","1713304360352","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","C",,"1","1713304360355","player.py","1.1.5 for 2021-2022 @t1",,"C",,,,,
+"File.Edit","l","","1","1713304361588","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","l",,"2","1713304361618","player.py","1.1.5 for 2021-2022 @t1",,"l",,,,,
+"File.Edit","a","","2","1713304362027","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","a",,"3","1713304362029","player.py","1.1.5 for 2021-2022 @t1",,"a",,,,,
+"File.Edit","s","","3","1713304362224","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"4","1713304362230","player.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit","s","","4","1713304362359","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"5","1713304362364","player.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit"," ","","5","1713304363123","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"6","1713304363130","player.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"X-Action","Backspace",,,"1713304365475","player.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit",""," ","5","1713304365480","player.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713304365652","player.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","s","4","1713304365660","player.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713304365813","player.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","s","3","1713304365817","player.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713304365992","player.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","a","2","1713304366003","player.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713304366192","player.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","l","1","1713304366195","player.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713304366416","player.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","C","0","1713304366418","player.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713304366635","player.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","c","","0","1713304368118","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","c",,"1","1713304368120","player.py","1.1.5 for 2021-2022 @t1",,"c",,,,,
+"X-Action","Choose Lookup Item",,,"1713304371832","player.py","1.1.5 for 2021-2022 @t1",,"Choose Lookup Item",,,,,
+"File.Edit","lass","","1","1713304371850","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"File.Edit"," ","","5","1713304373145","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"6","1713304373151","player.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","P","","6","1713304374660","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","P",,"7","1713304374665","player.py","1.1.5 for 2021-2022 @t1",,"P",,,,,
+"File.Edit","l","","7","1713304375749","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","l",,"8","1713304375754","player.py","1.1.5 for 2021-2022 @t1",,"l",,,,,
+"File.Edit","a","","8","1713304376365","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","a",,"9","1713304376370","player.py","1.1.5 for 2021-2022 @t1",,"a",,,,,
+"File.Edit","y","","9","1713304376946","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","y",,"10","1713304376951","player.py","1.1.5 for 2021-2022 @t1",,"y",,,,,
+"File.Edit","e","","10","1713304377229","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","e",,"11","1713304377233","player.py","1.1.5 for 2021-2022 @t1",,"e",,,,,
+"File.Edit","r","","11","1713304377408","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","r",,"12","1713304377413","player.py","1.1.5 for 2021-2022 @t1",,"r",,,,,
+"File.Edit",":","","12","1713304379419","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke",":",,"13","1713304379421","player.py","1.1.5 for 2021-2022 @t1",,":",,,,,
+"X-Action","Enter",,,"1713304379699","player.py","1.1.5 for 2021-2022 @t1",,"Enter",,,,,
+"File.Edit","
+","","13","1713304379711","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"File.Edit","    ","","14","1713304379723","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"File.Edit","p","","18","1713304380708","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","p",,"19","1713304380713","player.py","1.1.5 for 2021-2022 @t1",,"p",,,,,
+"File.Edit","a","","19","1713304381141","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","a",,"20","1713304381155","player.py","1.1.5 for 2021-2022 @t1",,"a",,,,,
+"File.Edit","s","","20","1713304381327","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"21","1713304381336","player.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit","s","","21","1713304381486","player.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"22","1713304381550","player.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"X-Action","EditorChange",,,"1713304388120","player.py","1.1.5 for 2021-2022 @t1",,"EditorChange",,,,,
+"X-Action","Outside edit","","","1713307098646","starter.py","1.1.5 for 2021-2022 @t1",,"Outside Edit",,,,,
+"File.Edit","","import pygame
 
 
 SCREEN_WIDTH = 800
@@ -117,4 +378,6 @@ def main():
 
 
 main()
-","","0","1713298386204","starter.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+","0","1713307098646","starter.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"File.Edit","","","0","1713307098646","starter.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Action","ShowYourWork Init","","","1713307098733",,"1.1.5 for 2021-2022 @t1",,"Init",,,,,
