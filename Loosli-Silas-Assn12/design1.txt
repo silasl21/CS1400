@@ -1,0 +1,13 @@
+image lists are stacked, player one should be the first image list inside of the list, then player 2, with respective images for each
+
+Player.py
+ The player class, named Player
+ The list for these images needs to be [up, right, down, left] (images)
+Cell.py
+ the cell class, named Cell
+ the list for these images needs to be [vertical, horizontal, down_left, down_right, up left, up_right]
+
+-----------------------------
+|           Player          |
+|---------------------------|
+|   -
