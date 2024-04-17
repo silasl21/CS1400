@@ -8,6 +8,7 @@ RIGHT = 1
 DOWN = 2
 LEFT = 3
 
+
 # player 1 has a blue color, player 2 has a red color
 class Bike:
     def __init__(self, screen, player_number, position, draw_factor: int, player_image_list):
