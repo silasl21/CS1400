@@ -85,6 +85,13 @@ def main():
     num_rows = SCREEN_HEIGHT // cell_size
     num_cols = SCREEN_WIDTH // cell_size
 
+    # setting up the rows and columns
+    for col in range(num_cols):
+        game_grid.append([])
+        for row in range(num_rows):
+            game_grid[col].append(Cell())
+
+
     # Setting up a loading screen
     loading = True
     start_time = time.time()

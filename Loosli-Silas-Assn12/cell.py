@@ -18,4 +18,22 @@ class Cell:
         self.__draw_rect = pygame.Rect(position[0] * draw_factor, position[1] * draw_factor, 10, 10)
         self.__player_number = player_number
         # Setting the different image lists for the different characters
-        self.image_list = image_list[player_number - 1]
+        self.__image_list = image_list[player_number - 1]
+
+    def draw(self):
+        if self.__state != 0:
+            self.__screen.blit(self.__image_list[self.__state], self.__draw_rect)
+
+    def reset(self):
+        self.__state = EMPTY
+
+    def set_vertical(self):
+        self.__state = VERTICAL
+
+    def set_horizontal(self):
+        self.__state = HORIZONTAL
+
+    def set_corner(self, direction):
+        self.__state = direction
+
+

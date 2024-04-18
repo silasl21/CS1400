@@ -18,9 +18,10 @@ class Bike:
         # Setting the different image lists for the different characters
         self.__image_list = player_image_list[player_number - 1]
         self.__state = -1
+        self.__position = position
 
-    def draw(self, direction):
+    def draw(self):
         # self.__screen.blit(self.__image_list[], self.__draw_rect) -- this is only needed if this function
         # also draws the background, but it doesn't
         if self.__state != -1:
-            self.__screen.blit(self.__image_list[self.__player_number][direction])
+            self.__screen.blit(self.__image_list[self.__state], self.__position)
