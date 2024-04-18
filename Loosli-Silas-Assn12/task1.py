@@ -2,7 +2,9 @@
 # CS1400 MWF 9:30
 import time
 import pygame
-from media import images, sounds
+from cell import Cell
+from bike import Bike
+
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 800
 CLOCK_DELAY = 30
@@ -72,7 +74,7 @@ def main():
     loading_image_2 = pygame.image.load("media/images/retro-title-2.jpg")
     loading_image_1 = pygame.image.load("media/images/retro-title-1.jpg")
 
-    bg_music_1.play()
+    bg_music_1.play(-1)
 
     ####
     # Setup game data
@@ -89,8 +91,10 @@ def main():
     for col in range(num_cols):
         game_grid.append([])
         for row in range(num_rows):
-            game_grid[col].append(Cell())
+            game_grid[col].append(Cell(screen, [col, row], cell_size, player_trails))
 
+    player_1.append(game_grid[num_cols // 3][num_rows - 1])
+    player_2.append(game_grid[(num_cols // 3) * 2][num_rows - 1])
 
     # Setting up a loading screen
     loading = True
@@ -104,26 +108,48 @@ def main():
         ####
         # Collect User Input/Events
         ####
+        # player 1
+        if keys[pygame.K_w]:
+            print("w")
+        if keys[pygame.K_a]:
+            print("a")
+        if keys[pygame.K_s]:
+            print("s")
+        if keys[pygame.K_d]:
+            print("d")
+
+        # player 2
+        if keys[pygame.K_UP]:
+            print("up")
+        if keys[pygame.K_LEFT]:
+            print("left")
+        if keys[pygame.K_DOWN]:
+            print("down")
+        if keys[pygame.K_RIGHT]:
+            print("right")
 
         # If the user exits the program, break out of the loop
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
+
+        # set up the loading screen
         if keys[pygame.K_RETURN]:
             loading = False
         ####
         # Update Game State
         ####
         if running:
-
+            # getting a screen that flashes with press enter to start
             if loading:
-                loading_screen_time = time.time() // 2
+                loading_screen_time = time.time() // 0.85
                 if loading_screen_time % 2 == 0:
                     screen.blit(loading_image_1, [0, 0])
                 else:
                     screen.blit(loading_image_2, [0, 0])
             else:
                 pass
+                # setup input
 
         ####
         # Update the Display

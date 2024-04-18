@@ -11,14 +11,13 @@ UP_LEFT = 4
 UP_RIGHT = 5
 
 class Cell:
-    def __init__(self, screen, player_number, position, draw_factor: int, image_list):
+    def __init__(self, screen, position, draw_factor: int, image_list):
         self.__screen = screen
         self.__state = EMPTY
         self.__position = position
         self.__draw_rect = pygame.Rect(position[0] * draw_factor, position[1] * draw_factor, 10, 10)
-        self.__player_number = player_number
         # Setting the different image lists for the different characters
-        self.__image_list = image_list[player_number - 1]
+        self.__image_list = image_list
 
     def draw(self):
         if self.__state != 0:
