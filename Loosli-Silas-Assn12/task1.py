@@ -184,40 +184,41 @@ def main():
                 bg_music_1.stop()
 
         # player 1
-        player_1_direction_prev = player_1_direction
-        if keys[pygame.K_w]:
-            player_1_direction = UP
-            player_1_did_turn = True
-        elif keys[pygame.K_a]:
-            player_1_direction = LEFT
-            player_1_did_turn = True
-        elif keys[pygame.K_s]:
-            player_1_direction = DOWN
-            player_1_did_turn = True
-        elif keys[pygame.K_d]:
-            player_1_direction = RIGHT
-            player_1_did_turn = True
-        if player_1_did_turn and not loading:
-            player_1_turn.play()
-            player_1_did_turn = False
+        if not game_over:
+            player_1_direction_prev = player_1_direction
+            if keys[pygame.K_w]:
+                player_1_direction = UP
+                player_1_did_turn = True
+            elif keys[pygame.K_a]:
+                player_1_direction = LEFT
+                player_1_did_turn = True
+            elif keys[pygame.K_s]:
+                player_1_direction = DOWN
+                player_1_did_turn = True
+            elif keys[pygame.K_d]:
+                player_1_direction = RIGHT
+                player_1_did_turn = True
+            if player_1_did_turn and not loading:
+                player_1_turn.play()
+                player_1_did_turn = False
 
-        # player 2
-        player_2_direction_prev = player_2_direction
-        if keys[pygame.K_UP]:
-            player_2_direction = UP
-            player_2_did_turn = True
-        elif keys[pygame.K_LEFT]:
-            player_2_direction = LEFT
-            player_2_did_turn = True
-        elif keys[pygame.K_DOWN]:
-            player_2_direction = DOWN
-            player_2_did_turn = True
-        elif keys[pygame.K_RIGHT]:
-            player_2_direction = RIGHT
-            player_2_did_turn = True
-        if player_2_did_turn and not loading:
-            player_2_turn.play()
-            player_2_did_turn = False
+            # player 2
+            player_2_direction_prev = player_2_direction
+            if keys[pygame.K_UP]:
+                player_2_direction = UP
+                player_2_did_turn = True
+            elif keys[pygame.K_LEFT]:
+                player_2_direction = LEFT
+                player_2_did_turn = True
+            elif keys[pygame.K_DOWN]:
+                player_2_direction = DOWN
+                player_2_did_turn = True
+            elif keys[pygame.K_RIGHT]:
+                player_2_direction = RIGHT
+                player_2_did_turn = True
+            if player_2_did_turn and not loading and not game_over:
+                player_2_turn.play()
+                player_2_did_turn = False
 
         ####
         # Update State of Components and game data
