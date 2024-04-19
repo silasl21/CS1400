@@ -1,4 +1,4 @@
-image lists are stacked, player one should be the first image list inside of the list, then player 2, with respective images for each
+image lists are stacked, player one should be the first image list inside the list, then player 2, with respective images for each
 
 Player.py
  The player class, named Player
@@ -7,7 +7,36 @@ Cell.py
  the cell class, named Cell
  the list for these images needs to be [vertical, horizontal, down_left, down_right, up left, up_right]
 
------------------------------
-|           Player          |
-|---------------------------|
-|   -
+-------------------------------------
+|           Player                  |
+|-----------------------------------|
+|   - screen: screen                |
+|   - player_number: int            |
+|   - draw_factor: int              |
+|   - player_image_list: lst        |
+|-----------------------------------|
+|   + __init__(screen: screen, player_number: int, draw_factor: int, player_image_list:lst): none
+|   + draw(position: lst, direction: int)
+|-----------------------------------|
+
+--------------------------------------------
+|           Cell                            |
+|-------------------------------------------|
+|   - screen: screen                        |
+|   - state: int                            |
+|   - position: lst                         |
+|   - draw_rect: pygame.Rect                |
+|   - image_list: lst                       |
+|-------------------------------------------|
+|   + draw_cell(player_numer: int): None    |
+|   + get_position(): lst                   |
+|   + set_state(state: int): None           |
+--------------------------------------------
+
+
+Ok, so we've got a list of lists, for the cells. These are each 10 by 10 pixels. These will start off as cell objects, all empty. At the  very start of the game, we fill them all with cell objects. These objects do everything except holding onto the vehicle pictures.
+
+This program is based around the snake game, where every cell is updated because the player moves into it. This is a similar concept, each time the player moves, it updates the cell that it is in and sets the state of the cell to the player, causing the player image to be blitted to the screen. After it does this, it assigns the cell a previous direction and current direction and the cell takes that and turns it into a line. This makes the trail behind the player.
+The players are governed by the cell class, which does all the grunt work, aside from the functions inside the main class, which govern the actual movement of the player between cells. After the functions inside the main function go off, the cell objects affected store the necessary data and use it for figuring out what they need to look like.
+
+It took me two different attempts to get this right, as probably seen by the showyourwork. I spent far too long designing the initial loading screen and not nearly enough time on the actual game, so I hope you liked the loading screen, haha. Anyway, I hope you like the game, I may add more animations into it if I feel like it, but probably not, I've got too much to do for finals week. Thank you for grading this assignment and I hope you liked it.

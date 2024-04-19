@@ -2,13 +2,38 @@
 # CS1400 MWF 9:30
 import time
 import pygame
-from cell import Cell
-from bike import Bike
+from cell import Cell, EMPTY, HORIZONTAL, VERTICAL, UP_LEFT, UP_RIGHT, DOWN_LEFT, DOWN_RIGHT
+from player import Player, UP, DOWN, LEFT, RIGHT
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 800
 CLOCK_DELAY = 30
-TITLE = "Lightcycle Runner"
+TITLE = "LightCycle Runner"
+
+
+def update_player(player, direction, game_grid):
+    # Get the position of the player
+    player_pos = [] + player.get_position()
+
+    # modify the position as needed
+    if direction == RIGHT:
+        player_pos[0] += 1
+    elif direction == LEFT:
+        player_pos[0] -= 1
+    elif direction == UP:
+        player_pos[1] -= 1
+    elif direction == DOWN:
+        player_pos[1] += 1
+
+    if 0 <= player_pos[0] < len(game_grid) and 0 <= player_pos[1] < len(game_grid[0]) and game_grid[0][1].get_type() == EMPTY:
+
+        # put the player at the front of the list
+        player.set_position(player_pos)
+
+        # throw a game over flag if a bike goes into the side
+        return True
+    else:
+        return False
 
 
 def main():
@@ -66,7 +91,7 @@ def main():
         pygame.transform.rotate(player_2_trail_corner, 90),
     ]
 
-    #combining the lists together for easier access
+    # combining the lists together for easier access
     player_images = [player_1_images, player_2_images]
     player_trails = [player_1_trails, player_2_trails]
 
@@ -93,8 +118,12 @@ def main():
         for row in range(num_rows):
             game_grid[col].append(Cell(screen, [col, row], cell_size, player_trails))
 
-    player_1.append(game_grid[num_cols // 3][num_rows - 1])
-    player_2.append(game_grid[(num_cols // 3) * 2][num_rows - 1])
+    # game_grid[num_cols // 3][num_rows - 1] = Player(screen, 1, [num_cols // 3, num_rows - 1], cell_size, player_images)
+    # game_grid[(num_cols // 3) * 2][num_rows - 1] = Player(screen, 2, [(num_cols // 3) * 2, num_rows - 1], cell_size,
+    #                                                       player_images)
+
+    player_1 = Player(screen, 1, [num_cols // 3, num_rows - 1], cell_size, player_images)
+    player_2 = Player(screen, 2, [(num_cols // 3) * 2, num_rows - 1], cell_size, player_images)
 
     # Setting up a loading screen
     loading = True
@@ -103,30 +132,36 @@ def main():
     # Start the main loop
     game_over = False
     running = True
+    player_1_direction = UP
+    player_2_direction = UP
+    test = True
     while running:
-        keys = pygame.key.get_pressed()
+
         ####
         # Collect User Input/Events
         ####
+
+        keys = pygame.key.get_pressed()
+
         # player 1
         if keys[pygame.K_w]:
-            print("w")
-        if keys[pygame.K_a]:
-            print("a")
-        if keys[pygame.K_s]:
-            print("s")
-        if keys[pygame.K_d]:
-            print("d")
+            player_1_direction = UP
+        elif keys[pygame.K_a]:
+            player_1_direction = LEFT
+        elif keys[pygame.K_s]:
+            player_1_direction = DOWN
+        elif keys[pygame.K_d]:
+            player_1_direction = RIGHT
 
         # player 2
-        if keys[pygame.K_UP]:
-            print("up")
-        if keys[pygame.K_LEFT]:
-            print("left")
-        if keys[pygame.K_DOWN]:
-            print("down")
-        if keys[pygame.K_RIGHT]:
-            print("right")
+        elif keys[pygame.K_UP]:
+            player_2_direction = UP
+        elif keys[pygame.K_LEFT]:
+            player_2_direction = LEFT
+        elif keys[pygame.K_DOWN]:
+            player_2_direction = DOWN
+        elif keys[pygame.K_RIGHT]:
+            player_2_direction = RIGHT
 
         # If the user exits the program, break out of the loop
         for event in pygame.event.get():
@@ -139,7 +174,7 @@ def main():
         ####
         # Update Game State
         ####
-        if running:
+        if not game_over:
             # getting a screen that flashes with press enter to start
             if loading:
                 loading_screen_time = time.time() // 0.85
@@ -148,17 +183,27 @@ def main():
                 else:
                     screen.blit(loading_image_2, [0, 0])
             else:
-                pass
-                # setup input
+                if not game_over:
+                    game_over = not update_player(player_1, player_1_direction, game_grid)
+                    game_over = not update_player(player_2, player_2_direction, game_grid)
 
-        ####
-        # Update the Display
-        ####
+                # draw the players
+
+
+
+            ####
+            # Update the Display
+            ####
             if not loading:
+                screen.blit(background_image, [0, 0])
                 bg_music_1.stop()
                 # put stuff here to make the bikes move
+                for col in game_grid:
+                    for item in col:
+                        item.draw(1)
+                player_1.draw(1)
+                player_2.draw(2)
 
-                screen.blit(background_image, [0, 0])
 
 
         # Update display
