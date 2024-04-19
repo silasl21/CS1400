@@ -11,3 +11,7 @@ Cell.py
 |           Player          |
 |---------------------------|
 |   -
+
+
+Ok, so we've got a list of lists, for the cells. These are each 10 by 10 pixels. These will start off as cell objects, all empty. At the very start of the game, two of these cells will be players, so they turn into a player object. The player object is literally just there to draw the player to the correct position and direction. This is all it will do, then the object will be drawn at a different spot. The cell will relay its position to the player when the player is inside of the list.
+1. The cell class:
