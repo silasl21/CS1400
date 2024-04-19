@@ -76,9 +76,12 @@ def main():
     bg_music_2 = pygame.mixer.Sound("media/sounds/BG-music-1.mp3")
     bg_music_1 = pygame.mixer.Sound("media/sounds/Arena.mp3")
     crash_sound = pygame.mixer.Sound("media/sounds/crash.wav")
+    crash_sound.set_volume(0.5)
     game_over_music = pygame.mixer.Sound("media/sounds/Disc_Wars.mp3")
     player_1_turn = pygame.mixer.Sound("media/sounds/turn-1.mp3")
+    player_1_turn.set_volume(0.2)
     player_2_turn = pygame.mixer.Sound("media/sounds/turn-2.mp3")
+    player_2_turn.set_volume(0.2)
     player_1_did_turn = False
     player_2_did_turn = False
 
