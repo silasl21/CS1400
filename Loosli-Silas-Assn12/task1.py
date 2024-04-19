@@ -190,17 +190,21 @@ def main():
         if not game_over:
             player_1_direction_prev = player_1_direction
             if keys[pygame.K_w]:
-                player_1_direction = UP
-                player_1_did_turn = True
+                if player_1_direction_prev != DOWN:
+                    player_1_direction = UP
+                    player_1_did_turn = True
             elif keys[pygame.K_a]:
-                player_1_direction = LEFT
-                player_1_did_turn = True
+                if player_1_direction_prev != RIGHT:
+                    player_1_direction = LEFT
+                    player_1_did_turn = True
             elif keys[pygame.K_s]:
-                player_1_direction = DOWN
-                player_1_did_turn = True
+                if player_1_direction_prev != UP:
+                    player_1_direction = DOWN
+                    player_1_did_turn = True
             elif keys[pygame.K_d]:
-                player_1_direction = RIGHT
-                player_1_did_turn = True
+                if player_1_direction_prev != LEFT:
+                    player_1_direction = RIGHT
+                    player_1_did_turn = True
             if player_1_did_turn and not loading:
                 player_1_turn.play()
                 player_1_did_turn = False
@@ -208,17 +212,21 @@ def main():
             # player 2
             player_2_direction_prev = player_2_direction
             if keys[pygame.K_UP]:
-                player_2_direction = UP
-                player_2_did_turn = True
+                if player_2_direction_prev != DOWN:
+                    player_2_direction = UP
+                    player_2_did_turn = True
             elif keys[pygame.K_LEFT]:
-                player_2_direction = LEFT
-                player_2_did_turn = True
+                if player_2_direction_prev != RIGHT:
+                    player_2_direction = LEFT
+                    player_2_did_turn = True
             elif keys[pygame.K_DOWN]:
-                player_2_direction = DOWN
-                player_2_did_turn = True
+                if player_2_direction_prev != UP:
+                    player_2_direction = DOWN
+                    player_2_did_turn = True
             elif keys[pygame.K_RIGHT]:
-                player_2_direction = RIGHT
-                player_2_did_turn = True
+                if player_2_direction_prev != LEFT:
+                    player_2_direction = RIGHT
+                    player_2_did_turn = True
             if player_2_did_turn and not loading and not game_over:
                 player_2_turn.play()
                 player_2_did_turn = False
@@ -299,7 +307,7 @@ def main():
             screen.blit(winner_msg, [SCREEN_WIDTH // 2 - winner_msg.get_width() // 2, SCREEN_HEIGHT // 2])
             press_enter_msg = pygame.font.SysFont("timesnewroman", 50).render("Press enter to try again", True, "white")
 
-            # making another loading screen cuz i can
+            # making another loading screen cuz I can
             loading_screen_time = time.time() // 0.85
             if loading_screen_time % 2 == 0:
                 screen.blit(press_enter_msg, [SCREEN_WIDTH // 2 - press_enter_msg.get_width() // 2, SCREEN_HEIGHT // 1.5])
