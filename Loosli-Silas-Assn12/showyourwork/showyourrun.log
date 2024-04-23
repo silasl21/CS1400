@@ -1,0 +1,188 @@
+"EventType","InsertText","DeleteText","SourceLocation","ClientTimestamp","CodeStateSection","ToolInstances","EditType","X-Metadata","CodeStateID","X-Compilable","EventID","SubjectID","AssignmentID"
+"Run.Program","3","",,"PythonRunner",,"1713401024876","task1.py",,,,,,
+"o","3",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713401025179",,,,,,,
+"o","3",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713401025179",,,,,,,
+"o","3",,"Traceback (most recent call last):
+",,"stderr","1713401025816",,,,,,,
+"o","3",,"  File ""/home/silas/PycharmProjects/CS1400/Loosli-Silas-Assn12/task1.py"", line 143, in <module>
+",,"stderr","1713401025816",,,,,,,
+"o","3",,"    main()
+",,"stderr","1713401025816",,,,,,,
+"o","3",,"  File ""/home/silas/PycharmProjects/CS1400/Loosli-Silas-Assn12/task1.py"", line 92, in main
+",,"stderr","1713401025816",,,,,,,
+"o","3",,"    game_grid[col].append(Cell())
+",,"stderr","1713401025816",,,,,,,
+"o","3",,"                          ^^^^
+",,"stderr","1713401025816",,,,,,,
+"o","3",,"NameError: name 'Cell' is not defined
+",,"stderr","1713401025816",,,,,,,
+"o","3",,"
+Process finished with exit code 137 (interrupted by signal 9:SIGKILL)
+",,"system","1713401032710",,,,,,,
+"Run.Program","4","",,"PythonRunner",,"1713401049186","task1.py",,,,,,
+"o","4",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713401049412",,,,,,,
+"o","4",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713401049412",,,,,,,
+"o","4",,"
+Process finished with exit code 137 (interrupted by signal 9:SIGKILL)
+",,"system","1713401101260",,,,,,,
+"Run.Program","5","",,"PythonRunner",,"1713401113445","task1.py",,,,,,
+"o","5",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713401113845",,,,,,,
+"o","5",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713401113845",,,,,,,
+"o","5",,"Traceback (most recent call last):
+",,"stderr","1713401140094",,,,,,,
+"o","5",,"  File ""/home/silas/PycharmProjects/CS1400/Loosli-Silas-Assn12/task1.py"", line 143, in <module>
+",,"stderr","1713401140094",,,,,,,
+"o","5",,"    main()
+",,"stderr","1713401140094",,,,,,,
+"o","5",,"  File ""/home/silas/PycharmProjects/CS1400/Loosli-Silas-Assn12/task1.py"", line 140, in main
+",,"stderr","1713401140094",,,,,,,
+"o","5",,"    clock.tick(CLOCK_DELAY)
+",,"stderr","1713401140094",,,,,,,
+"o","5",,"KeyboardInterrupt
+",,"stderr","1713401140094",,,,,,,
+"o","5",,"
+Process finished with exit code 137 (interrupted by signal 9:SIGKILL)
+",,"system","1713401140255",,,,,,,
+"Run.Program","6","",,"PythonRunner",,"1713401142007","task1.py",,,,,,
+"o","6",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713401142203",,,,,,,
+"o","6",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713401142203",,,,,,,
+"o","6",,"Traceback (most recent call last):
+",,"stderr","1713401156212",,,,,,,
+"o","6",,"  File ""/home/silas/PycharmProjects/CS1400/Loosli-Silas-Assn12/task1.py"", line 143, in <module>
+",,"stderr","1713401156212",,,,,,,
+"o","6",,"    main()
+",,"stderr","1713401156212",,,,,,,
+"o","6",,"  File ""/home/silas/PycharmProjects/CS1400/Loosli-Silas-Assn12/task1.py"", line 140, in main
+",,"stderr","1713401156213",,,,,,,
+"o","6",,"    clock.tick(CLOCK_DELAY)
+",,"stderr","1713401156213",,,,,,,
+"o","6",,"KeyboardInterrupt
+",,"stderr","1713401156213",,,,,,,
+"o","6",,"
+Process finished with exit code 137 (interrupted by signal 9:SIGKILL)
+",,"system","1713401157226",,,,,,,
+"Run.Program","7","",,"PythonRunner",,"1713401158537","task1.py",,,,,,
+"o","7",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713401158717",,,,,,,
+"o","7",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713401158717",,,,,,,
+"o","7",,"
+Process finished with exit code 137 (interrupted by signal 9:SIGKILL)
+",,"system","1713401200326",,,,,,,
+"Run.Program","8","",,"PythonRunner",,"1713401295997","task1.py",,,,,,
+"o","8",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713401296457",,,,,,,
+"o","8",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713401296457",,,,,,,
+"o","8",,"
+Process finished with exit code 137 (interrupted by signal 9:SIGKILL)
+",,"system","1713401336876",,,,,,,
+"Run.Program","9","",,"PythonRunner",,"1713405432729","task1.py",,,,,,
+"o","9",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713405433365",,,,,,,
+"o","9",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713405433365",,,,,,,
+"o","9",,"Traceback (most recent call last):
+",,"stderr","1713405448489",,,,,,,
+"o","9",,"  File ""/home/silas/PycharmProjects/CS1400/Loosli-Silas-Assn12/task1.py"", line 152, in <module>
+",,"stderr","1713405448489",,,,,,,
+"o","9",,"    main()
+",,"stderr","1713405448490",,,,,,,
+"o","9",,"  File ""/home/silas/PycharmProjects/CS1400/Loosli-Silas-Assn12/task1.py"", line 149, in main
+",,"stderr","1713405448490",,,,,,,
+"o","9",,"    clock.tick(CLOCK_DELAY)
+",,"stderr","1713405448490",,,,,,,
+"o","9",,"KeyboardInterrupt
+",,"stderr","1713405448490",,,,,,,
+"o","9",,"
+Process finished with exit code 137 (interrupted by signal 9:SIGKILL)
+",,"system","1713405448877",,,,,,,
+"Run.Program","10","",,"PythonRunner",,"1713405450523","task1.py",,,,,,
+"o","10",,"<frozen importlib._bootstrap>:241: RuntimeWarning: Your system is avx2 capable but pygame was not built with support for it. The performance of some of your blits could be adversely affected. Consider enabling compile time detection with environment variables like PYGAME_DETECT_AVX2=1 if you are compiling without cross compilation.
+",,"stderr","1713405450537",,,,,,,
+"o","10",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713405450854",,,,,,,
+"o","10",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713405450854",,,,,,,
+"o","10",,"Traceback (most recent call last):
+",,"stderr","1713405520198",,,,,,,
+"o","10",,"  File ""/home/silas/PycharmProjects/CS1400/Loosli-Silas-Assn12/task1.py"", line 152, in <module>
+",,"stderr","1713405520198",,,,,,,
+"o","10",,"    main()
+",,"stderr","1713405520198",,,,,,,
+"o","10",,"  File ""/home/silas/PycharmProjects/CS1400/Loosli-Silas-Assn12/task1.py"", line 149, in main
+",,"stderr","1713405520198",,,,,,,
+"o","10",,"    clock.tick(CLOCK_DELAY)
+",,"stderr","1713405520198",,,,,,,
+"o","10",,"KeyboardInterrupt
+",,"stderr","1713405520198",,,,,,,
+"o","10",,"
+Process finished with exit code 137 (interrupted by signal 9:SIGKILL)
+",,"system","1713457759842",,,,,,,
+"Run.Program","3","",,"PythonRunner",,"1713490079375","task1-take2.py",,,,,,
+"o","3",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713490079543",,,,,,,
+"o","3",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713490079543",,,,,,,
+"o","3",,"
+Process finished with exit code 0
+",,"system","1713490082851",,,,,,,
+"Run.Program","3","",,"PythonRunner",,"1713490540556","task1.py",,,,,,
+"o","3",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713490540920",,,,,,,
+"o","3",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713490540920",,,,,,,
+"o","3",,"
+Process finished with exit code 0
+",,"system","1713490564310",,,,,,,
+"Run.Program","4","",,"PythonRunner",,"1713490584416","task1.py",,,,,,
+"o","4",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713490584664",,,,,,,
+"o","4",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713490584664",,,,,,,
+"o","4",,"
+Process finished with exit code 0
+",,"system","1713490594679",,,,,,,
+"Run.Program","5","",,"PythonRunner",,"1713490623396","task1.py",,,,,,
+"o","5",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713490623993",,,,,,,
+"o","5",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713490623993",,,,,,,
+"o","5",,"
+Process finished with exit code 0
+",,"system","1713490637825",,,,,,,
+"Run.Program","6","",,"PythonRunner",,"1713490644316","task1.py",,,,,,
+"o","6",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713490644526",,,,,,,
+"o","6",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713490644526",,,,,,,
+"Run.Program","7","",,"PythonRunner",,"1713542013256","task1.py",,,,,,
+"o","7",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713542013257",,,,,,,
+"o","7",,"
+Process finished with exit code 137 (interrupted by signal 9:SIGKILL)
+",,"system","1713542023531",,,,,,,
+"Run.Program","3","",,"PythonRunner",,"1713646697152","task1.py",,,,,,
+"o","3",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713646697694",,,,,,,
+"o","3",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713646697694",,,,,,,
+"o","3",,"
+Process finished with exit code 137 (interrupted by signal 9:SIGKILL)
+",,"system","1713646718136",,,,,,,
+"Run.Program","4","",,"PythonRunner",,"1713646720430","task1.py",,,,,,
+"o","4",,"pygame 2.5.1 (SDL 2.28.3, Python 3.11.6)
+",,"stdout","1713646720970",,,,,,,
+"o","4",,"Hello from the pygame community. https://www.pygame.org/contribute.html
+",,"stdout","1713646720970",,,,,,,
+"o","4",,"
+Process finished with exit code 137 (interrupted by signal 9:SIGKILL)
+",,"system","1713646773371",,,,,,,
