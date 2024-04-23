@@ -1,0 +1,45 @@
+"EventType","InsertText","DeleteText","SourceLocation","ClientTimestamp","CodeStateSection","ToolInstances","EditType","X-Metadata","CodeStateID","X-Compilable","EventID","SubjectID","AssignmentID"
+"Run.Program","3","",,"PythonRunner",,"1713844057544","task1.py",,,,,,
+"o","3",,".",,"stdout","1713844057785",,,,,,,
+"o","3",,".",,"stdout","1713844058283",,,,,,,
+"o","3",,"
+",,"stdout","1713844058785",,,,,,,
+"o","3",,"Dealing Hand.",,"stdout","1713844058785",,,,,,,
+"o","3",,".",,"stdout","1713844059286",,,,,,,
+"o","3",,".",,"stdout","1713844059786",,,,,,,
+"o","3",,"
+",,"stdout","1713844060286",,,,,,,
+"o","3",,"What would you like to do? 
+",,"stdout","1713844060286",,,,,,,
+"o","3",,"	1) Show Hand
+",,"stdout","1713844060286",,,,,,,
+"o","3",,"	2) Sort Hand by Rank
+",,"stdout","1713844060286",,,,,,,
+"o","3",,"	3) Sort Hand by Suit
+",,"stdout","1713844060286",,,,,,,
+"o","3",,"	4) Linear Search
+",,"stdout","1713844060286",,,,,,,
+"o","3",,"	5) Binary Search
+",,"stdout","1713844060286",,,,,,,
+"o","3",,"	6) Deal New Hand
+",,"stdout","1713844060286",,,,,,,
+"o","3",,"	7) Quit
+",,"stdout","1713844060286",,,,,,,
+"o","3",,"Choose an option: ",,"stdout","1713844060286",,,,,,,
+"o","3",,"Traceback (most recent call last):
+",,"stderr","1713844060903",,,,,,,
+"o","3",,"  File ""/home/silas/PycharmProjects/CS1400/Loosli-Silas-Assn13/task1.py"", line 116, in <module>
+",,"stderr","1713844060903",,,,,,,
+"o","3",,"    main()
+",,"stderr","1713844060903",,,,,,,
+"o","3",,"  File ""/home/silas/PycharmProjects/CS1400/Loosli-Silas-Assn13/task1.py"", line 29, in main
+",,"stderr","1713844060903",,,,,,,
+"o","3",,"    selection = int(input(""Choose an option: ""))
+",,"stderr","1713844060903",,,,,,,
+"o","3",,"                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+",,"stderr","1713844060903",,,,,,,
+"o","3",,"KeyboardInterrupt
+",,"stderr","1713844060903",,,,,,,
+"o","3",,"
+Process finished with exit code 130 (interrupted by signal 2:SIGINT)
+",,"system","1713844060907",,,,,,,

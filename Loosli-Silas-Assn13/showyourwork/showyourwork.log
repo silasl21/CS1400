@@ -1,0 +1,321 @@
+"EventType","InsertText","DeleteText","SourceLocation","ClientTimestamp","CodeStateSection","ToolInstances","EditType","X-Metadata","CodeStateID","X-Compilable","EventID","SubjectID","AssignmentID"
+"X-Action","ShowYourWork Init","","","1713843789555",,"1.1.5 for 2021-2022 @t1",,"Init",,,,,
+"X-Action","Enter",,,"1713843818943","task1.py","1.1.5 for 2021-2022 @t1",,"Enter",,,,,
+"File.Edit","
+from deck import Deck
+from time import sleep
+from card_utility import SUITS, RANKS, get_id_from_indices
+from search_and_sort_errors import insertion_sort, selection_sort, bubble_sort, linear_search, binary_search
+
+def main():
+    print(""Welcome to the Deckinator"")
+    print()
+
+    # Deal a new hand of cards to the player
+    player_hand = new_hand()
+
+    done = False
+
+    # Program Loop
+    while not done:
+        # Display the menu
+        print(""What would you like to do? "")
+        print(""\t1) Show Hand"")
+        print(""\t2) Sort Hand by Rank"") # Do insertion sort
+        print(""\t3) Sort Hand by Suit"") # Do selection sort
+        print(""\t4) Linear Search"")
+        print(""\t5) Binary Search"") # Use bubble sort first
+        print(""\t6) Deal New Hand"")
+        print(""\t7) Quit"")
+        selection = int(input(""Choose an option: ""))
+
+        # Process the menu selection
+        if selection == 1:
+            print_hand(player_hand)
+        elif selection == 2:
+            thinking(""\tPerforming Insertion Sort"")
+            insertion_sort(player_hand)
+        elif selection == 3:
+            thinking(""\tPerforming Selection Sort"")
+            selection_sort(player_hand)
+        elif selection == 4:
+            card_id = search_selection_menu()
+            thinking(""\tPerforming Linear Search"")
+            linear_search(player_hand, card_id)
+        elif selection == 5:
+            thinking(""\tPerforming Bubble Sort"")
+            bubble_sort(player_hand)
+            card_id = search_selection_menu()
+            thinking(""\tPerforming Binary Search"")
+            binary_search(player_hand, card_id)
+        elif selection == 6:
+            player_hand = new_hand()
+        elif selection == 7:
+            done = True
+
+    print(""Thanks for playing Deckinator"")
+
+
+# Deal a new hand of 10 cards
+def new_hand():
+    thinking(""Shuffling"")
+    deck = Deck()
+    thinking(""Dealing Hand"")
+    tmp_hand = []
+
+    # Deal 10 cards from the deck
+    for i in range(10):
+        tmp_hand.append(deck.draw())
+
+    return tmp_hand
+
+
+# Display the search selection menu
+# Return the id of the card that will match the selected options
+def search_selection_menu():
+    print(""Select a card to search for"")
+    rank_index = rank_selection_menu()
+    suit_index = suit_selection_menu()
+
+    print(""\tSearching for the "" + RANKS[rank_index] + "" of "" + SUITS[suit_index])
+
+    return get_id_from_indices(rank_index, suit_index)
+
+
+# Display a menu to choose a suit
+# Return the index value of the suit selected
+def suit_selection_menu():
+    for i in range(len(SUITS)):
+        print(""\t"" + str(i + 1) + "") "" + SUITS[i])
+
+    return int(input(""Choose a Suit: "")) - 1
+
+
+# Display a menu to choose a rank
+# Return the index value of the rank selected
+def rank_selection_menu():
+    for i in range(len(RANKS)):
+        print(""\t"" + str(i + 1) + "") "" + RANKS[i])
+
+    return int(input(""Choose a Rank: "")) - 1
+
+
+# Display the hand
+def print_hand(hand):
+    for i in hand:
+        print(""\t"" + str(i))
+
+
+# Display a thinking message
+def thinking(msg):
+    print(msg, end="""")
+    for i in range(3):
+        print(""."", end="""")
+        sleep(0.5)
+    print()
+
+main()","","0","1713843818998","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Action","Enter",,,"1713843819053","task1.py","1.1.5 for 2021-2022 @t1",,"Enter",,,,,
+"File.Edit","
+","","0","1713843819057","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"File.Edit","#","","0","1713843820876","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","#",,"1","1713843820902","task1.py","1.1.5 for 2021-2022 @t1",,"#",,,,,
+"File.Edit"," ","","1","1713843821039","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"2","1713843821041","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","S","","2","1713843821516","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","S",,"3","1713843821518","task1.py","1.1.5 for 2021-2022 @t1",,"S",,,,,
+"File.Edit","i","","3","1713843821650","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","i",,"4","1713843821654","task1.py","1.1.5 for 2021-2022 @t1",,"i",,,,,
+"File.Edit","l","","4","1713843821713","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","l",,"5","1713843821715","task1.py","1.1.5 for 2021-2022 @t1",,"l",,,,,
+"File.Edit","a","","5","1713843821751","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","a",,"6","1713843821755","task1.py","1.1.5 for 2021-2022 @t1",,"a",,,,,
+"File.Edit","s","","6","1713843821830","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"7","1713843821835","task1.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit"," ","","7","1713843821980","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"8","1713843821982","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","L","","8","1713843822221","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","L",,"9","1713843822223","task1.py","1.1.5 for 2021-2022 @t1",,"L",,,,,
+"File.Edit","o","","9","1713843822402","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","o",,"10","1713843822404","task1.py","1.1.5 for 2021-2022 @t1",,"o",,,,,
+"File.Edit","o","","10","1713843822517","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","o",,"11","1713843822519","task1.py","1.1.5 for 2021-2022 @t1",,"o",,,,,
+"File.Edit","s","","11","1713843822803","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","s",,"12","1713843822807","task1.py","1.1.5 for 2021-2022 @t1",,"s",,,,,
+"File.Edit","l","","12","1713843822867","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","l",,"13","1713843822870","task1.py","1.1.5 for 2021-2022 @t1",,"l",,,,,
+"File.Edit","i","","13","1713843822909","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","i",,"14","1713843822912","task1.py","1.1.5 for 2021-2022 @t1",,"i",,,,,
+"X-Action","Enter",,,"1713843823990","task1.py","1.1.5 for 2021-2022 @t1",,"Enter",,,,,
+"File.Edit","
+","","16","1713843824004","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"File.Edit","#","","15","1713843824765","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","#",,"16","1713843824766","task1.py","1.1.5 for 2021-2022 @t1",,"#",,,,,
+"File.Edit"," ","","16","1713843825178","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"17","1713843825181","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","C","","17","1713843825431","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","C",,"18","1713843825433","task1.py","1.1.5 for 2021-2022 @t1",,"C",,,,,
+"File.Edit","S","","18","1713843827062","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","S",,"19","1713843827068","task1.py","1.1.5 for 2021-2022 @t1",,"S",,,,,
+"File.Edit","!","","19","1713843827384","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","!",,"20","1713843827386","task1.py","1.1.5 for 2021-2022 @t1",,"!",,,,,
+"File.Edit","$","","20","1713843827779","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","$",,"21","1713843827781","task1.py","1.1.5 for 2021-2022 @t1",,"$",,,,,
+"File.Edit",")","","21","1713843828009","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke",")",,"22","1713843828011","task1.py","1.1.5 for 2021-2022 @t1",,")",,,,,
+"File.Edit",")","","22","1713843828176","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke",")",,"23","1713843828183","task1.py","1.1.5 for 2021-2022 @t1",,")",,,,,
+"File.Edit"," ","","23","1713843828373","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"24","1713843828378","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"X-Action","Backspace",,,"1713843828712","task1.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit",""," ","23","1713843828734","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713843828863","task1.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","",")","22","1713843828866","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713843829020","task1.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","",")","21","1713843829024","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713843829151","task1.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","$","20","1713843829157","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713843829389","task1.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","!","19","1713843829392","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"File.Edit","1","","19","1713843829749","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","1",,"20","1713843829755","task1.py","1.1.5 for 2021-2022 @t1",,"1",,,,,
+"File.Edit","4","","20","1713843830111","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","4",,"21","1713843830115","task1.py","1.1.5 for 2021-2022 @t1",,"4",,,,,
+"File.Edit","0","","21","1713843830380","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","0",,"22","1713843830386","task1.py","1.1.5 for 2021-2022 @t1",,"0",,,,,
+"File.Edit","0","","22","1713843830512","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","0",,"23","1713843830515","task1.py","1.1.5 for 2021-2022 @t1",,"0",,,,,
+"File.Edit"," ","","23","1713843831382","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"24","1713843831385","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","-","","24","1713843831463","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","-",,"25","1713843831465","task1.py","1.1.5 for 2021-2022 @t1",,"-",,,,,
+"File.Edit"," ","","25","1713843831521","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"26","1713843831523","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","W","","26","1713843832312","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","W",,"27","1713843832314","task1.py","1.1.5 for 2021-2022 @t1",,"W",,,,,
+"X-Action","Backspace",,,"1713843832566","task1.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","W","26","1713843832572","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"File.Edit","M","","26","1713843832756","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","M",,"27","1713843832757","task1.py","1.1.5 for 2021-2022 @t1",,"M",,,,,
+"File.Edit","W","","27","1713843832950","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","W",,"28","1713843832955","task1.py","1.1.5 for 2021-2022 @t1",,"W",,,,,
+"File.Edit","F","","28","1713843833523","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","F",,"29","1713843833525","task1.py","1.1.5 for 2021-2022 @t1",,"F",,,,,
+"File.Edit"," ","","29","1713843834328","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke"," ",,"30","1713843834330","task1.py","1.1.5 for 2021-2022 @t1",," ",,,,,
+"File.Edit","(","","30","1713843834770","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","(",,"31","1713843834773","task1.py","1.1.5 for 2021-2022 @t1",,"(",,,,,
+"File.Edit",";","","31","1713843835526","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke",";",,"32","1713843835530","task1.py","1.1.5 for 2021-2022 @t1",,";",,,,,
+"X-Action","Backspace",,,"1713843836135","task1.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","",";","31","1713843836138","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713843836298","task1.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","(","30","1713843836304","task1.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"File.Edit","9","","30","1713843836888","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","9",,"31","1713843836890","task1.py","1.1.5 for 2021-2022 @t1",,"9",,,,,
+"File.Edit",":","","31","1713843837301","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke",":",,"32","1713843837307","task1.py","1.1.5 for 2021-2022 @t1",,":",,,,,
+"File.Edit","3","","32","1713843837666","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","3",,"33","1713843837668","task1.py","1.1.5 for 2021-2022 @t1",,"3",,,,,
+"File.Edit","0","","33","1713843837763","task1.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","0",,"34","1713843837764","task1.py","1.1.5 for 2021-2022 @t1",,"0",,,,,
+"X-Action","EditorChange",,,"1713843968430","task1.py","1.1.5 for 2021-2022 @t1",,"EditorChange",,,,,
+"X-Action","EditorChange",,,"1713843972626","task1.py","1.1.5 for 2021-2022 @t1",,"EditorChange",,,,,
+"X-Action","EditorChange",,,"1713843975341","task1.py","1.1.5 for 2021-2022 @t1",,"EditorChange",,,,,
+"X-Action","EditorChange",,,"1713843977092","task1.py","1.1.5 for 2021-2022 @t1",,"EditorChange",,,,,
+"X-Action","EditorChange",,,"1713843978257","task1.py","1.1.5 for 2021-2022 @t1",,"EditorChange",,,,,
+"X-Action","EditorChange",,,"1713843979181","task1.py","1.1.5 for 2021-2022 @t1",,"EditorChange",,,,,
+"X-Action","EditorChange",,,"1713843980125","task1.py","1.1.5 for 2021-2022 @t1",,"EditorChange",,,,,
+"X-Action","EditorChange",,,"1713843981720","task1.py","1.1.5 for 2021-2022 @t1",,"EditorChange",,,,,
+"X-Action","EditorChange",,,"1713843993804","task1.py","1.1.5 for 2021-2022 @t1",,"EditorChange",,,,,
+"File.Edit","1from card_utility import SUITS, RANKS, get_id_from_indices
+
+def insertion_sort(card_list):
+    #### INSERTION SORT CODE ####
+    #### This should sort by Rank ####
+    for i in range(0, len(card_list)):
+        curr_element = card_list[i]
+        j = i - 1
+        while j >= 0 and SUITS.index(card_list[j].get_suit()) > SUITS.index(curr_element.get_suit()):
+            card_list[j + 1] = card_list[j]
+            j -= 1
+
+        card_list[j + 1] = curr_element
+
+    print(""\tInsertion Sort done"")
+
+
+def selection_sort(card_list):
+    #### SELECTION SORT CODE ####
+    #### This should sort by Suit ####
+    for i in range(len(card_list) - 1):
+        curr_min_index = i
+
+        for j in range(i + 1, len(card_list)):
+            if SUITS.index(card_list[curr_min_index].get_suit()) > SUITS.index(card_list[i].get_suit()):
+                curr_min_index = j
+
+        if curr_min_index != j:
+            card_list[i], card_list[curr_min_index] = card_list[curr_min_index], card_list[i]
+
+    print(""\tSelection Sort Done"")
+
+
+def linear_search(card_list, card_id):
+    #### LINEAR SEARCH CODE ####
+    # Indicate index value if found
+    # Give proper message if not found
+    for i in range(len(card_list)):
+        if card_id == card_list[i]:
+            print(""Your card is at index "" + str(i + 1))
+            return
+    print(""Your card was not found"")
+
+
+def binary_search(card_list, card_id):
+    #### BINARY SEARCH CODE ####
+    # Indicate index value if found
+    # Give proper message if not found
+    low = 0
+    high = len(card_list) - 1
+    while high > low:
+        mid = (high + low) // 2
+        if card_id == card_list[mid].get_id():
+            print(""Your card is at index "" + str(mid))
+            return
+        elif card_id > card_list[mid].get_id():
+            mid = high - 1
+        else:
+            mid = low + 1
+
+    print(""Your card was not found"")
+
+
+def bubble_sort(card_list):
+    #### BUBBLE SORT CODE ####
+    #### This should sort by id ####
+    did_swap = True
+    sort_cnt = 1
+
+    while did_swap:
+        did_swap = False
+
+        for i in range(len(card_list) - sort_cnt):
+            if card_list[i].get_id() > card_list[i + 1].get_id():
+                card_list[i] = card_list[i + 1]
+                card_list[i + 1] = card_list[i]
+                did_swap = True
+
+            sort_cnt += 1
+
+    print(""\tBubble Sort done"")
+","","0","1713844044211","search_and_sort_errors.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","1",,"1","1713844044218","search_and_sort_errors.py","1.1.5 for 2021-2022 @t1",,"1",,,,,
+"File.Edit","1","","0","1713844045971","search_and_sort_errors.py","1.1.5 for 2021-2022 @t1","Insert",,,,,,
+"X-Keystroke","1",,"2","1713844045973","search_and_sort_errors.py","1.1.5 for 2021-2022 @t1",,"1",,,,,
+"X-Action","Backspace",,,"1713844046440","search_and_sort_errors.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","1","0","1713844046443","search_and_sort_errors.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"X-Action","Backspace",,,"1713844046595","search_and_sort_errors.py","1.1.5 for 2021-2022 @t1",,"Backspace",,,,,
+"File.Edit","","1","0","1713844046597","search_and_sort_errors.py","1.1.5 for 2021-2022 @t1","Delete",,,,,,
+"Run.Program","Start",,,"1713844057544","task1.py","1.1.5 for 2021-2022 @t1",,"Start",,,,,
+"Run.Program","Exit","130",,"1713844060907","task1.py","1.1.5 for 2021-2022 @t1",,"Start",,,,,
