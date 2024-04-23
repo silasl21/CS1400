@@ -1,3 +1,6 @@
+# Silas Loosli
+# CS1400 - MWF 9:30
+
 from card_utility import SUITS, RANKS, get_id_from_indices
 
 def insertion_sort(card_list):
@@ -6,7 +9,7 @@ def insertion_sort(card_list):
     for i in range(0, len(card_list)):
         curr_element = card_list[i]
         j = i - 1
-        while j >= 0 and SUITS.index(card_list[j].get_suit()) > SUITS.index(curr_element.get_suit()):
+        while j >= 0 and RANKS.index(card_list[j].get_rank()) > RANKS.index(curr_element.get_rank()):
             card_list[j + 1] = card_list[j]
             j -= 1
 
@@ -22,10 +25,10 @@ def selection_sort(card_list):
         curr_min_index = i
 
         for j in range(i + 1, len(card_list)):
-            if SUITS.index(card_list[curr_min_index].get_suit()) > SUITS.index(card_list[i].get_suit()):
+            if SUITS.index(card_list[curr_min_index].get_suit()) > SUITS.index(card_list[j].get_suit()):
                 curr_min_index = j
 
-        if curr_min_index != j:
+        if curr_min_index != len(card_list) - i:
             card_list[i], card_list[curr_min_index] = card_list[curr_min_index], card_list[i]
 
     print("\tSelection Sort Done")
