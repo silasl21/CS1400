@@ -39,7 +39,7 @@ def linear_search(card_list, card_id):
     # Indicate index value if found
     # Give proper message if not found
     for i in range(len(card_list)):
-        if card_id == card_list[i]:
+        if card_id == card_list[i].get_id():
             print("Your card is at index " + str(i + 1))
             return
     print("Your card was not found")
