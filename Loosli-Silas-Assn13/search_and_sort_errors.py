@@ -3,6 +3,7 @@
 
 from card_utility import SUITS, RANKS, get_id_from_indices
 
+
 def insertion_sort(card_list):
     #### INSERTION SORT CODE ####
     #### This should sort by Rank ####
