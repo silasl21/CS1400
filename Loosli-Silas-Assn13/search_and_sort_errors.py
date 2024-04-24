@@ -51,15 +51,15 @@ def binary_search(card_list, card_id):
     # Give proper message if not found
     low = 0
     high = len(card_list) - 1
-    while high > low:
+    while high >= low:
         mid = (high + low) // 2
         if card_id == card_list[mid].get_id():
-            print("Your card is at index " + str(mid))
+            print("Your card is at index " + str(mid + 1))
             return
         elif card_id > card_list[mid].get_id():
-            mid = high - 1
+            low = mid + 1
         else:
-            mid = low + 1
+            high = mid - 1
 
     print("Your card was not found")
 
@@ -75,10 +75,10 @@ def bubble_sort(card_list):
 
         for i in range(len(card_list) - sort_cnt):
             if card_list[i].get_id() > card_list[i + 1].get_id():
-                card_list[i] = card_list[i + 1]
-                card_list[i + 1] = card_list[i]
+                card_list[i], card_list[i + 1] = card_list[i + 1], card_list[i]
+
                 did_swap = True
 
-            sort_cnt += 1
+        sort_cnt += 1
 
     print("\tBubble Sort done")
